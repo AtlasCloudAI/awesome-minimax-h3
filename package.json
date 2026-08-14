@@ -1,0 +1,15 @@
+{
+  "name": "awesome-minimax-h3",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Awesome MiniMax H3 — curated H3 ecosystem list",
+  "type": "module",
+  "scripts": {
+    "generate": "tsx scripts/generate-readmes.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.8.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

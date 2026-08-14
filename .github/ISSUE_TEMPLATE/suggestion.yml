@@ -1,0 +1,46 @@
+name: Suggest an entry
+description: Propose a project for the list
+title: "[entry] "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before filing: the list is **H3 only**, **SFW only**, and has a popularity floor of
+        50 stars / 10 likes / 500 downloads. The one exemption is projects MiniMax named itself.
+        See [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md).
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: input
+    id: popularity
+    attributes:
+      label: Current stars / likes / downloads
+      placeholder: "173 stars"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What does it do that nothing already on the list does?
+      description: The most important field. Be specific.
+    validations:
+      required: true
+  - type: input
+    id: official
+    attributes:
+      label: Named by MiniMax? (optional)
+      description: If it is below the floor but MiniMax named it, link the mention here.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmations
+      options:
+        - label: This is about MiniMax H3 specifically, not MiniMax's other models
+          required: true
+        - label: It is SFW and does not depend on uncensored components
+          required: true
