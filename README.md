@@ -1,6 +1,6 @@
 # Awesome MiniMax H3
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Entries](https://img.shields.io/badge/entries-128-blue.svg)](https://github.com/AtlasCloudAI/awesome-minimax-h3) [![Verified](https://img.shields.io/badge/links%20verified-2026--08--18-brightgreen.svg)](https://github.com/AtlasCloudAI/awesome-minimax-h3)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Entries](https://img.shields.io/badge/entries-138-blue.svg)](https://github.com/AtlasCloudAI/awesome-minimax-h3) [![Verified](https://img.shields.io/badge/links%20verified-2026--08--18-brightgreen.svg)](https://github.com/AtlasCloudAI/awesome-minimax-h3)
 
 > Everything built on top of MiniMax H3 — the open-weight omni-modal video model that generates picture and native audio together. Weights, quantizations, LoRAs, ComfyUI nodes, workflows and the tricks people found. Every entry checked against a live API and dated.
 
@@ -63,6 +63,7 @@ Getting H3 to produce a first clip, on whatever hardware you actually have.
 - ⭐ [Comfy template: reference-to-video](https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_minimax_h3_r2v.json) — Official r2v workflow template.
 - [MiniMaxH3ComfyUI/MiniMax-H3-ComfyUI](https://github.com/MiniMaxH3ComfyUI/MiniMax-H3-ComfyUI) `128★ · 2026-08-08` — All-in-one bundle for people who would rather not assemble nodes by hand.
 - [nkxx188/ComfyUI-MiniMaxH3-Easy](https://github.com/nkxx188/ComfyUI-MiniMaxH3-Easy) `449★ · 2026-08-15` — One node set covering t2v, i2v, first/last-frame and reference modes.
+- [LeonQ8/ComfyUI-ALLinONE-MinimaxH3](https://github.com/LeonQ8/ComfyUI-ALLinONE-MinimaxH3) `199★ · 2026-08-18` — The entire H3 pipeline behind one node — pick a mode, drop in a prompt or references, generate. No graph to wire up and no hunting through a dozen node packs to find the right workflow.
 
 ### Serving frameworks
 
@@ -76,6 +77,7 @@ Getting H3 to produce a first clip, on whatever hardware you actually have.
 - [deepbeepmeep/Wan2GP](https://github.com/deepbeepmeep/Wan2GP) `8.7k★ · 2026-08-16` — Runs H3 on low-VRAM consumer cards; pairs with the DeepBeepMeep packaged weights.
 - [inlineresearch/Inline-Studio](https://github.com/inlineresearch/Inline-Studio) `233★ · 2026-08-18` — Node-based AI filmmaking on your own GPU.
 - [PipeNetwork/minimax-h3-mlx](https://github.com/PipeNetwork/minimax-h3-mlx) `59★ · 2026-08-10` — MLX port of the full 33B joint video+audio pipeline, validated against the reference implementation.
+- [mrbizarro/Phosphene](https://github.com/mrbizarro/Phosphene) `163★ · 2026-08-16` — Video, image and character-LoRA training on a Mac, all in MLX: no PyTorch, no CUDA, no cloud, no API key. One-click Pinokio install, and it runs LTX-2.5 alongside H3.
 
 ### Hardware-specific
 
@@ -113,6 +115,7 @@ The full model is 123.6GB. These are the projects that got it down to something 
 - [lilcheaty/MiniMax-H3-NVFP4](https://huggingface.co/lilcheaty/MiniMax-H3-NVFP4) *(NVFP4)* `82♥ · 2026-08-05` — NVFP4 for Blackwell-class cards.
 - [molbal/MiniMax-H3-GGUF](https://huggingface.co/molbal/MiniMax-H3-GGUF) *(GGUF)* `50♥ · 194.5k↓ · 2026-08-12` — Another GGUF line.
 - [leejet/MiniMax-H3-GGUF](https://huggingface.co/leejet/MiniMax-H3-GGUF) *(GGUF)* `15♥ · 57.5k↓ · 2026-08-04` — From the author of stable-diffusion.cpp.
+- [Abiray/MiniMax-H3-Pruned-GGUF](https://huggingface.co/Abiray/MiniMax-H3-Pruned-GGUF) *(GGUF)* `47♥ · 186.6k↓ · 2026-08-07` — GGUF built on the pruned weights — the smallest route that still tracks the ComfyUI build.
 
 ### Split-out components
 
@@ -122,6 +125,7 @@ The full model is 123.6GB. These are the projects that got it down to something 
 - [NicoLab28/ClipProj-MiniMax-H3](https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3) `112♥ · 2026-08-16` — Projected text encoder: 15.7GB down to 5.2GB.
 - [Mamad8/MiniMax-H3-Image-VAE](https://huggingface.co/Mamad8/MiniMax-H3-Image-VAE) `62♥ · 2026-08-08` — Image VAE split out for single-frame work.
 - [nicolab28/ComfyUI-ClipProj](https://github.com/nicolab28/ComfyUI-ClipProj) `93★ · 2026-08-17` — The ComfyUI side of ClipProj — swaps the large text encoder for a small one through a learned linear projection.
+- [smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models](https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models) `77♥ · 2026-08-16` — Pre-merged fl2va/ref2va hybrids, for when you would rather download the combination than assemble it with a hybrid loader.
 
 ## Make it fast
 
@@ -129,7 +133,7 @@ Two separate levers: fewer sampling steps (Turbo LoRAs) and cheaper steps (cachi
 
 ### Turbo LoRAs — 20 steps down to 4–8
 
-- ⭐ [larryvrh/MiniMax-H3-Turbo-Lora](https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora) `788♥ · 2026-08-08` — The original 4-step Turbo LoRA, with multiple checkpoint and EMA variants. 4 steps is ~5× faster but smears large motion; 6–8 steps keeps detail and audio quality.
+- ⭐ [larryvrh/MiniMax-H3-Turbo-Lora](https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora) `789♥ · 2026-08-08` — The original 4-step Turbo LoRA, with multiple checkpoint and EMA variants. 4 steps is ~5× faster but smears large motion; 6–8 steps keeps detail and audio quality.
 - [Larryvrh/ComfyUI-MiniMax-H3-Turbo](https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo) `456★ · 2026-08-14` — Matching loader node and Turbo sampler; handles BF16, INT8 ConvRot and pruned builds.
 - [lightx2v/Minimax-h3-Turbo](https://huggingface.co/lightx2v/Minimax-h3-Turbo) `586♥ · 264.4k↓ · 2026-08-13` — Distilled Turbo weights; the method is open-sourced in ModelTC/Minimax-H3-Turbo.
 - [ModelTC/Minimax-H3-Turbo](https://github.com/ModelTC/Minimax-H3-Turbo) `262★ · 2026-08-15` — The 4-step distillation method behind the weights above.
@@ -148,6 +152,8 @@ Two separate levers: fewer sampling steps (Turbo LoRAs) and cheaper steps (cachi
 - [T8mars/comfyui-minimax-h3-blockcache-T8](https://github.com/T8mars/comfyui-minimax-h3-blockcache-T8) `106★ · 2026-08-14` — Block cache.
 - [duckyshell/ComfyUI-MiniMaxH3-FirstBlockCache](https://github.com/duckyshell/ComfyUI-MiniMaxH3-FirstBlockCache) `79★ · 2026-08-07` — First-block cache.
 - [lihaoyun6/ComfyUI-MiniMaxH3-Cache](https://github.com/lihaoyun6/ComfyUI-MiniMaxH3-Cache) `75★ · 2026-08-03` — Cache node tuned specifically for H3.
+- [Tr1dae/ComfyUI-MiniMaxH3_LatentUpscaler](https://github.com/Tr1dae/ComfyUI-MiniMaxH3_LatentUpscaler) `198★ · 2026-08-17` — Upscales AV latents.
+- [LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler](https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler) `73★ · 2026-08-17` — Upscales H3's 24-channel latents with a trained network rather than naive interpolation, skipping the expensive VAE decode/encode round trip on the way to high resolution.
 
 ## LoRAs and training
 
@@ -157,6 +163,7 @@ Teaching H3 a look it does not have — and the paths to training your own.
 
 - ⭐ [fal/MiniMax-H3-Realism-People-LoRA](https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA) `245♥ · 18.6k↓ · 2026-08-12` — Vendor-trained realistic-people LoRA: 176 clips at a uniform 24fps, 16 hyperparameter runs compared.
 - [Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime](https://huggingface.co/Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime) `57♥ · 2026-08-11` — Looping hand-drawn anime.
+- [Jojocodex/minimax-h3-spatial-physics-lora](https://huggingface.co/Jojocodex/minimax-h3-spatial-physics-lora) `35♥ · 49↓ · 2026-08-17` — Trained for spatial reasoning and object motion rather than a look — aimed at the physics H3 gets wrong.
 
 ### Train your own
 
@@ -176,15 +183,16 @@ The most interesting corner of this ecosystem: things H3 turned out to do that i
 
 - ⭐ [NikoDemon80/ComfyUI-H3-Motion-Context](https://github.com/NikoDemon80/ComfyUI-H3-Motion-Context) `619★ · 2026-08-15` — Recursive generation: reads the previous segment's picture and audio latents directly, takes its last 22 frames as the next segment's opening condition, and re-aligns audio onto one timeline — avoiding the information loss of decoding and re-encoding between segments.
 - [ethanfel/ComfyUI-MiniMaxH3-Contex-Loop](https://github.com/ethanfel/ComfyUI-MiniMaxH3-Contex-Loop) `255★ · 2026-08-18` — Reviewable long-form workflow: shot planning, per-segment preview, regeneration, checkpoints and automatic stitching.
+- [tritant/ComfyUI_MiniMax_H3_Extender](https://github.com/tritant/ComfyUI_MiniMax_H3_Extender) `111★ · 2026-08-18` — Folds Ref2VA conditioning, Motion Context, disk caching, multi-clip generation and image/audio references into one node, so long continuous sequences stop requiring a hand-built graph.
 
 ### Use a video model to edit one image
 
 - ⭐ [tori29umai0123/ComfyUI-MiniMaxH3-SingleFrame](https://github.com/tori29umai0123/ComfyUI-MiniMaxH3-SingleFrame) `78★ · 2026-08-09` — Turns H3 into an image editor with no extra training at all: pin the input image at frame 0, generate a single AV latent, decode it as an image. A second mode pins first and last frames and takes the middle. Ships Temporal RoPE Patch and Empty Single Frame Latent nodes.
 - [Comfy-Org/ComfyUI#15416](https://github.com/Comfy-Org/ComfyUI/issues/15416) — Tracking issue for single-frame VAE decode artifacts — read before you file your own.
+- [thaakeno/ComfyUI-MiniMax-H3-Studio](https://github.com/thaakeno/ComfyUI-MiniMax-H3-Studio) `63★ · 2026-08-17` — Turns H3 into an actual image workflow: text-to-image, editing, multi-reference generation, LightX acceleration, face refine, previews and benchmarking — without building the H3 graph yourself.
 
 ### Other
 
-- [Tr1dae/ComfyUI-MiniMaxH3_LatentUpscaler](https://github.com/Tr1dae/ComfyUI-MiniMaxH3_LatentUpscaler) `198★ · 2026-08-17` — Upscales AV latents.
 - [matlowai/ComfyUI-MAINodes](https://github.com/matlowai/ComfyUI-MAINodes) `90★ · 2026-08-18` — Contact-sheet diffusion (several views of one subject in a single generation) plus a motion lab for test-time de-roping.
 
 ### Audio-only generation, no repository required
@@ -206,6 +214,7 @@ H3 makes shots, not films. These projects add what sits above a shot: planning, 
 
 Installable skills that let a coding agent — Claude Code, Codex, OpenCode and friends — do the prompting and drive the pipeline for you.
 
+- [Rimagination/h3lite](https://github.com/Rimagination/h3lite) `217★ · 2026-08-17` — Hardware-aware Codex skill for local generation through ComfyUI: it profiles what you have and picks the route — low-VRAM fast, or quality — instead of making you choose. Bilingual docs.
 - [benjiyaya/Minimax-H3-Prompt-AgentSkill](https://github.com/benjiyaya/Minimax-H3-Prompt-AgentSkill) `100★ · 2026-08-06` — Agent Skill that turns media plus a rough idea into a formatted H3 prompt.
 - [SlavaSexton/ComfyUI-Agent-Kit](https://github.com/SlavaSexton/ComfyUI-Agent-Kit) `77★ · 2026-08-16` — One ComfyUI skill that every coding agent can drive — Claude Code, Codex, Gemini CLI, Qwen Code.
 - [T8mars/minimax-h3-prompt-skill-T8](https://github.com/T8mars/minimax-h3-prompt-skill-T8) `87★ · 2026-08-17` — Creative-DNA prompt cases packaged as installable skills.
@@ -232,6 +241,7 @@ H3 responds to a fairly specific prompt shape. These help you hit it.
 - [Adudeguyman/…-PromptBuilder](https://github.com/Adudeguyman/ComfyUI-Fantastic-MiniMaxH3-PromptBuilder) `102★ · 2026-08-18` — Prompt builder node.
 - [duckyshell/ComfyUI-MiniMaxH3-Prompt-Writer](https://github.com/duckyshell/ComfyUI-MiniMaxH3-Prompt-Writer) `91★ · 2026-08-15` — Local multimodal prompt writer running on Gemma 4 GGUF — no API calls.
 - [penposs/minimax-h3-video-prompt](https://github.com/penposs/minimax-h3-video-prompt) `53★ · 2026-08-04` — Generates and reviews prompts from a goal plus multimodal references.
+- [benjiyaya/ComfyUI-H3-VisionPromptor](https://github.com/benjiyaya/ComfyUI-H3-VisionPromptor) `62★ · 2026-08-09` — Give it an idea plus optional reference images and it returns a prompt with shots, camera vocabulary, dialogue tags, soundscape and music fields filled in.
 
 ## Ready-made workflows
 

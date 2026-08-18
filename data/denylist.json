@@ -312,6 +312,30 @@
       "name": "jlucasmcrell/ComfyUI-H3-Multishot",
       "reason": "star count collapsed 70 -> 2 between 2026-08-14 and 2026-08-18 with no repo recreation — consistent with inflated stars being purged; now far below the bar",
       "date": "2026-08-18"
+    },
+    {
+      "key": "gh:anil-matcha/awesome-ai-video-models",
+      "name": "Anil-matcha/awesome-ai-video-models",
+      "reason": "scope: cross-model comparison list, not an H3 project",
+      "date": "2026-08-18"
+    },
+    {
+      "key": "gh:shootthesound/fizgig",
+      "name": "shootthesound/Fizgig",
+      "reason": "scope: Krea 2 / Flux LoKR studio; MiniMax is one target among several",
+      "date": "2026-08-18"
+    },
+    {
+      "key": "gh:princepainter/comfyui-painternodes",
+      "name": "princepainter/ComfyUI-PainterNodes",
+      "reason": "scope: general toolkit across Flux/MiniMax/LTX/Wan, not H3-specific",
+      "date": "2026-08-18"
+    },
+    {
+      "key": "gh:light-and-ray/minimalistic-comfy-wrapper-webui",
+      "name": "light-and-ray/Minimalistic-Comfy-Wrapper-WebUI",
+      "reason": "scope: general ComfyUI front-end, not H3-specific",
+      "date": "2026-08-18"
     }
   ]
 }
