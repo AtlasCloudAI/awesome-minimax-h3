@@ -197,7 +197,7 @@ H3 makes shots, not films. These projects add what sits above a shot: planning, 
 
 - ⭐ [chiphoton/MiniMax-H3-Codex-Drama](https://github.com/chiphoton/MiniMax-H3-Codex-Drama) `11★ · 2026-08-16` — An installable Codex plugin with nine built-in skills that drives local H3 through the ComfyUI MCP: character and scene design, storyboard keyframes, per-shot workflow selection, then FFmpeg edit, mix, subtitle, export and QC. Prompts, assets, candidate takes and selection results are all kept, so a run can be resumed and each new attempt keeps its own version.
 - ⭐ [huangserva/ComfyUI_MiniMaxH3_Director](https://github.com/huangserva/ComfyUI_MiniMaxH3_Director) `684★ · 2026-08-04` — Segment planning, conditioning, sampling, decoding and export folded into one node; PySceneDetect splits scenes automatically and the previous segment's closing motion and audio become the next one's context.
-- [AIMixer/ComfyUI_MiniMaxH3_Director](https://github.com/AIMixer/ComfyUI_MiniMaxH3_Director) `529★ · 2026-08-15` — Multi-segment directing, adapted to the official nodes.
+- [AIMixer/ComfyUI_MiniMaxH3_Director](https://github.com/AIMixer/ComfyUI_MiniMaxH3_Director) `530★ · 2026-08-15` — Multi-segment directing, adapted to the official nodes.
 - [seesee75-commits/ComfyUI-MiniMaxH3-Director](https://github.com/seesee75-commits/ComfyUI-MiniMaxH3-Director) `213★ · 2026-08-16` — Timeline storyboard.
 - [open-video-ai/open-video](https://github.com/open-video-ai/open-video) `108★ · 2026-08-07` — "Ollama for MiniMax H3" — a local director layer over ComfyUI.
 - [yg496/CS-H3-Multimodal-Director](https://github.com/yg496/CS-H3-Multimodal-Director) `54★ · 2026-08-05` — Multimodal directing setup.
@@ -208,7 +208,7 @@ Installable skills that let a coding agent — Claude Code, Codex, OpenCode and 
 
 - [benjiyaya/Minimax-H3-Prompt-AgentSkill](https://github.com/benjiyaya/Minimax-H3-Prompt-AgentSkill) `100★ · 2026-08-06` — Agent Skill that turns media plus a rough idea into a formatted H3 prompt.
 - [SlavaSexton/ComfyUI-Agent-Kit](https://github.com/SlavaSexton/ComfyUI-Agent-Kit) `77★ · 2026-08-16` — One ComfyUI skill that every coding agent can drive — Claude Code, Codex, Gemini CLI, Qwen Code.
-- [T8mars/minimax-h3-prompt-skill-T8](https://github.com/T8mars/minimax-h3-prompt-skill-T8) `86★ · 2026-08-17` — Creative-DNA prompt cases packaged as installable skills.
+- [T8mars/minimax-h3-prompt-skill-T8](https://github.com/T8mars/minimax-h3-prompt-skill-T8) `87★ · 2026-08-17` — Creative-DNA prompt cases packaged as installable skills.
 - [unknowlei/minimax-h3-opencode-skills](https://github.com/unknowlei/minimax-h3-opencode-skills) `74★ · 2026-08-09` — OpenCode skill suite: directing, routing, multishot planning and prompt generation.
 
 ## Other ComfyUI nodes
@@ -228,7 +228,7 @@ H3 responds to a fairly specific prompt shape. These help you hit it.
 - [lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA](https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA) `166♥ · 864↓ · 2026-08-07` — A LoRA that rewrites your prompt instead of your pixels.
 - [fal — H3 prompting guide](https://fal.ai/learn/devs/minimax-h3-prompting-guide) — Prompting guide with 44 worked video examples.
 - [1038lab/ComfyUI-MiniMax-H3-Promptor](https://github.com/1038lab/ComfyUI-MiniMax-H3-Promptor) `141★ · 2026-08-14` — Cinematic prompt automation.
-- [T8mars/comfyui-minimax-h3-prompt-enhancer-T8](https://github.com/T8mars/comfyui-minimax-h3-prompt-enhancer-T8) `135★ · 2026-08-17` — Multimodal prompt enhancement.
+- [T8mars/comfyui-minimax-h3-prompt-enhancer-T8](https://github.com/T8mars/comfyui-minimax-h3-prompt-enhancer-T8) `136★ · 2026-08-17` — Multimodal prompt enhancement.
 - [Adudeguyman/…-PromptBuilder](https://github.com/Adudeguyman/ComfyUI-Fantastic-MiniMaxH3-PromptBuilder) `102★ · 2026-08-18` — Prompt builder node.
 - [duckyshell/ComfyUI-MiniMaxH3-Prompt-Writer](https://github.com/duckyshell/ComfyUI-MiniMaxH3-Prompt-Writer) `91★ · 2026-08-15` — Local multimodal prompt writer running on Gemma 4 GGUF — no API calls.
 - [penposs/minimax-h3-video-prompt](https://github.com/penposs/minimax-h3-video-prompt) `53★ · 2026-08-04` — Generates and reviews prompts from a goal plus multimodal references.

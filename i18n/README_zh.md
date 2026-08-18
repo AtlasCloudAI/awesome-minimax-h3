@@ -197,7 +197,7 @@ H3 出的是镜头，不是成片。这些项目补的是镜头之上的那层�
 
 - ⭐ [chiphoton/MiniMax-H3-Codex-Drama](https://github.com/chiphoton/MiniMax-H3-Codex-Drama) `11★ · 2026-08-16` — 可安装的 Codex 插件，内置 9 项 Skills，经 ComfyUI MCP 调度本地 H3：角色与场景设定 → 分镜关键帧 → 按镜头选工作流 → FFmpeg 剪辑混音字幕导出质检。提示词、素材、候选镜头与选择结果全留档，中断可续、每次新尝试各留版本。
 - ⭐ [huangserva/ComfyUI_MiniMaxH3_Director](https://github.com/huangserva/ComfyUI_MiniMaxH3_Director) `684★ · 2026-08-04` — 分段计划 + 条件编码 + 采样解码 + 导出整合进一个节点；PySceneDetect 自动切场景，上一段结尾动作与音频作为下一段上下文。
-- [AIMixer/ComfyUI_MiniMaxH3_Director](https://github.com/AIMixer/ComfyUI_MiniMaxH3_Director) `529★ · 2026-08-15` — 多段导演，适配官方节点。
+- [AIMixer/ComfyUI_MiniMaxH3_Director](https://github.com/AIMixer/ComfyUI_MiniMaxH3_Director) `530★ · 2026-08-15` — 多段导演，适配官方节点。
 - [seesee75-commits/ComfyUI-MiniMaxH3-Director](https://github.com/seesee75-commits/ComfyUI-MiniMaxH3-Director) `213★ · 2026-08-16` — 时间轴故事板。
 - [open-video-ai/open-video](https://github.com/open-video-ai/open-video) `108★ · 2026-08-07` — 「MiniMax H3 版的 Ollama」——架在 ComfyUI 之上的本地导演层。
 - [yg496/CS-H3-Multimodal-Director](https://github.com/yg496/CS-H3-Multimodal-Director) `54★ · 2026-08-05` — 多模态导演套件。
@@ -208,7 +208,7 @@ H3 出的是镜头，不是成片。这些项目补的是镜头之上的那层�
 
 - [benjiyaya/Minimax-H3-Prompt-AgentSkill](https://github.com/benjiyaya/Minimax-H3-Prompt-AgentSkill) `100★ · 2026-08-06` — 把素材 + 粗略想法转成规范 H3 提示词的 Agent Skill。
 - [SlavaSexton/ComfyUI-Agent-Kit](https://github.com/SlavaSexton/ComfyUI-Agent-Kit) `77★ · 2026-08-16` — 一个 ComfyUI skill，Claude Code / Codex / Gemini CLI / Qwen Code 都能驱动。
-- [T8mars/minimax-h3-prompt-skill-T8](https://github.com/T8mars/minimax-h3-prompt-skill-T8) `86★ · 2026-08-17` — 以可安装 skill 形式打包的创意 DNA 提示词案例。
+- [T8mars/minimax-h3-prompt-skill-T8](https://github.com/T8mars/minimax-h3-prompt-skill-T8) `87★ · 2026-08-17` — 以可安装 skill 形式打包的创意 DNA 提示词案例。
 - [unknowlei/minimax-h3-opencode-skills](https://github.com/unknowlei/minimax-h3-opencode-skills) `74★ · 2026-08-09` — OpenCode skill 套件：导演、路由、多镜头规划与提示词生成。
 
 ## 其他 ComfyUI 节点
@@ -228,7 +228,7 @@ H3 吃的提示词形状比较特定，这些工具帮你写对。
 - [lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA](https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA) `166♥ · 864↓ · 2026-08-07` — 改写提示词而不是改画面的 LoRA。
 - [fal — H3 提示词指南](https://fal.ai/learn/devs/minimax-h3-prompting-guide) — 提示词指南，附 44 个视频示例。
 - [1038lab/ComfyUI-MiniMax-H3-Promptor](https://github.com/1038lab/ComfyUI-MiniMax-H3-Promptor) `141★ · 2026-08-14` — 影视级提示词自动化。
-- [T8mars/comfyui-minimax-h3-prompt-enhancer-T8](https://github.com/T8mars/comfyui-minimax-h3-prompt-enhancer-T8) `135★ · 2026-08-17` — 多模态提示词增强。
+- [T8mars/comfyui-minimax-h3-prompt-enhancer-T8](https://github.com/T8mars/comfyui-minimax-h3-prompt-enhancer-T8) `136★ · 2026-08-17` — 多模态提示词增强。
 - [Adudeguyman/…-PromptBuilder](https://github.com/Adudeguyman/ComfyUI-Fantastic-MiniMaxH3-PromptBuilder) `102★ · 2026-08-18` — 提示词构建器节点。
 - [duckyshell/ComfyUI-MiniMaxH3-Prompt-Writer](https://github.com/duckyshell/ComfyUI-MiniMaxH3-Prompt-Writer) `91★ · 2026-08-15` — 跑在 Gemma 4 GGUF 上的本地多模态提示词写手，不发 API 请求。
 - [penposs/minimax-h3-video-prompt](https://github.com/penposs/minimax-h3-video-prompt) `53★ · 2026-08-04` — 从目标 + 多模态参考出发生成并复核提示词。
