@@ -41,3 +41,21 @@ Popularity numbers and dates are snapshots, not live values. Leave them as they 
 提交时请说明：链接、当前热度、以及**它能做而清单里其他项目做不到的事**——这一条最重要。
 
 改数据请改 [`data/ecosystem.json`](data/ecosystem.json) 后跑 `npm run generate`，**不要手改两份 README**（会被覆盖）。条目需要中英两份 note；写不了中文的话写英文并在 PR 里说一声，我们来补。
+
+---
+
+## How maintenance works
+
+Twice a week an Action re-checks every entry (`scripts/refresh.py`) and commits refreshed figures. Once a week another one sweeps for new candidates (`scripts/discover.py`) and files them as a review issue. Neither adds or removes entries on judgement — only on facts:
+
+| Signal | What happens |
+|---|---|
+| Popularity changed | Figures updated in place |
+| Repository renamed | Link and name follow the rename |
+| Link stops resolving | Withheld from the README; deleted after 21 days if still gone |
+| Link returns 403 | Nothing — plenty of sites block bots, and that is not a verdict |
+| Civitai entry flips to NSFW | Removed immediately; this one is policy, not judgement |
+| Popularity drops below the bar | Reported only. Star counts fluctuate; removal is a human call |
+| Popularity collapses (e.g. 70 → 2) | Flagged for review — usually means inflated stars were purged |
+
+`data/denylist.json` records everything that has been rejected, with the reason, so the sweep never re-suggests it. `owner:<handle>` entries block a publisher outright — an exact-repo rule is not enough when someone can just rename a repository. Deleting a key from that file makes the project eligible again.

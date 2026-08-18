@@ -1,0 +1,71 @@
+name: Discover new projects
+
+# Sweeps GitHub, Hugging Face and Civitai for H3 projects that are not listed
+# yet, clear the entry bar, and are not on the denylist. Files the results as
+# a review issue — nothing is ever added to the list automatically, because
+# "does it do something nothing else here does" is not a query.
+on:
+  schedule:
+    - cron: '0 3 * * 1'   # Mondays, 03:00 UTC — after the refresh run
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: discover
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Sweep for candidates
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python3 scripts/discover.py
+
+      - name: File or update the review issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          COUNT=$(cat discovery-count.txt)
+          echo "candidates: $COUNT"
+          if [ "$COUNT" = "0" ]; then
+            echo "nothing to review"
+            exit 0
+          fi
+
+          gh label create discovery \
+            --color 0e8a16 \
+            --description "Automated candidate sweep" \
+            --force >/dev/null 2>&1 || true
+
+          # Reuse the open review issue if there is one, so a queue that nobody
+          # has worked through yet does not turn into a pile of issues.
+          EXISTING=$(gh issue list --state open --label discovery \
+            --json number --jq '.[0].number // empty')
+
+          TITLE="Candidate queue — $(date -u +%Y-%m-%d) ($COUNT to review)"
+          if [ -n "$EXISTING" ]; then
+            gh issue edit "$EXISTING" --title "$TITLE" --body-file discovery-report.md
+            gh issue comment "$EXISTING" \
+              --body "Re-swept $(date -u +%Y-%m-%d): $COUNT candidate(s) now pending. Queue above refreshed."
+            echo "updated #$EXISTING"
+          else
+            gh issue create --title "$TITLE" --label discovery \
+              --body-file discovery-report.md
+          fi
+
+      - name: Publish the queue to the run summary
+        if: always()
+        run: cat discovery-report.md >> "$GITHUB_STEP_SUMMARY" || true

@@ -1,0 +1,317 @@
+{
+  "comment": "Entries automated discovery must never suggest again. `owner:<handle>` blocks every repo from that publisher. Removing a key here makes the project eligible once more.",
+  "entries": [
+    {
+      "key": "hf:bghira/minimax-h3-anyflow-wip",
+      "name": "bghira/minimax-h3-anyflow-wip",
+      "reason": "Hugging Face repo returns 401 (private or removed)",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:drowzeys/keys-heretic-minimax-h3-sol-engine-more-speed-upgrades-upscaler-finish-single-dgx-spark",
+      "name": "drowzeys/keys-heretic-…-Single-DGX-Spark",
+      "reason": "policy: builds on the uncensored Heretic text encoder",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:charlie12345/rocmfpx",
+      "name": "charlie12345/ROCmFPX",
+      "reason": "scope: not H3-specific",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:mrbizarro/minimax-h3-mlx",
+      "name": "mrbizarro/minimax-h3-mlx",
+      "reason": "below bar (27 stars); MLX route covered by PipeNetwork/minimax-h3-mlx",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:iamwavecut/orbitquant",
+      "name": "iamwavecut/OrbitQuant",
+      "reason": "below bar (11 stars)",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:iamwavecut/comfyui-orbitquant",
+      "name": "iamwavecut/ComfyUI-OrbitQuant",
+      "reason": "below bar (2 stars)",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "hf:wavecut/minimax-h3-orbitquant-w4a4",
+      "name": "WaveCut/MiniMax-H3-OrbitQuant-W4A4",
+      "reason": "below bar (2 likes)",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "hf:diffsynth-studio/minimax-h3-nf4",
+      "name": "DiffSynth-Studio/MiniMax-H3-NF4",
+      "reason": "below bar (7 likes)",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "hf:matlod/minimax-h3-turnaround",
+      "name": "matlod/minimax-h3-turnaround",
+      "reason": "below bar (2 likes); contact-sheet trick covered by matlowai/ComfyUI-MAINodes",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "hf:siraxe/vault_dweller_h3_slider",
+      "name": "siraxe/vault_dweller_H3_slider",
+      "reason": "below bar (2 likes)",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "hf:nyxia/h3-loras",
+      "name": "nyxia/H3-Loras",
+      "reason": "below bar (2 likes)",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "hf:ethanfel/minimax-h3-pruned-ref2va-delta-loras-experimental",
+      "name": "ethanfel/…-Ref2VA-Delta-LoRAs-Experimental",
+      "reason": "below bar (9 likes)",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "hf:instantx/minimax-h3-turbo-lora-diffusers",
+      "name": "InstantX/MiniMax-H3-Turbo-Lora-Diffusers",
+      "reason": "below bar (5 likes)",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:astropuzzo/comfyui-minimax-h3-image-studio",
+      "name": "astropuzzo/ComfyUI-MiniMax-H3-Image-Studio",
+      "reason": "below bar (37 stars)",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:shuaixn/comfyui-minimaxh3dualclocksampler",
+      "name": "shuaixn/ComfyUI-MiniMaxH3DualClockSampler",
+      "reason": "below bar (26 stars)",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:j955229/comfyui-minimax-h3-motion-director",
+      "name": "j955229/ComfyUI-MiniMax-H3-Motion-Director",
+      "reason": "below bar (25 stars)",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:heeeeeen/comfyui-h3-conditioning-cache",
+      "name": "HEEEeeeeN/ComfyUI-H3-Conditioning-Cache",
+      "reason": "below bar (11 stars)",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:heeeeeen/comfyui-h3-conditioning-cache-ai-drama-production-suite",
+      "name": "HEEEeeeeN/ComfyUI-H3-Conditioning-Cache-AI-Drama-Production-Suite",
+      "reason": "below bar (11 stars)",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "civitai:2837221",
+      "name": "MiniMax H3 Prompt Builder (Civitai)",
+      "reason": "below bar (471 downloads)",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "civitai:2842445",
+      "name": "Minimax H3 Prompt Writer (Civitai)",
+      "reason": "below bar (418 downloads)",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "civitai:2840578",
+      "name": "MacMax — MiniMax H3 on Apple Silicon (Civitai)",
+      "reason": "below bar (166 downloads)",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "url:https://huggingface.co/pipenetwork",
+      "name": "pipenetwork MLX weights",
+      "reason": "below bar (<10 likes); MLX route covered by the port repo",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "url:https://zhuanlan.zhihu.com/p/2068717960210936841",
+      "name": "知乎 closerAI — 4 步加速 LoRA",
+      "reason": "unverifiable: zhihu.com returns 403 to every automated request",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "url:https://zhuanlan.zhihu.com/p/2069902435284415811",
+      "name": "知乎 closerAI — Kijai 4 步极速",
+      "reason": "unverifiable: zhihu.com returns 403 to every automated request",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "hf:sexgod1979/pinkcherry_minimax-h3",
+      "name": "SexGod1979/PinkCherry_MiniMax-H3",
+      "reason": "policy: adult-oriented",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "hf:sexgod1979/pinkfluffybunny",
+      "name": "SexGod1979/PinkFluffyBunny",
+      "reason": "policy: adult-oriented",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "hf:tenstrip/10eros-max",
+      "name": "TenStrip/10Eros-Max",
+      "reason": "policy: adult-oriented",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "hf:ellapriest45/minimaxh3_actions",
+      "name": "EllaPriest45/MinimaxH3_Actions",
+      "reason": "policy: adult-oriented",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "hf:die2025/minimaxh3loras",
+      "name": "DIE2025/MiniMaxH3Loras",
+      "reason": "policy: adult-oriented",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "hf:sakamakismile/qwen3-vl-32b-heretic-minimax-h3-nvfp4",
+      "name": "sakamakismile/Qwen3-VL-32B-Heretic-MiniMax-H3-NVFP4",
+      "reason": "policy: uncensored text encoder",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "hf:abiray/qwen3-vl-32b-heretic-minimax-h3-nvfp4-comfyui",
+      "name": "Abiray/Qwen3-VL-32B-Heretic-MiniMax-H3-nvfp4-ComfyUI",
+      "reason": "policy: uncensored text encoder",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:drowzeys/keys-sm121-optimized-minimax-h3-nvidia-sol-engine-kijai-solattn_triton-single-dgx-spark",
+      "name": "drowzeys/keys-SM121-Optimized-…",
+      "reason": "below bar (27 stars); same author's Heretic-based line",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:minimax-ai/skills",
+      "name": "MiniMax-AI/skills",
+      "reason": "scope: not H3",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:minimax-ai/cli",
+      "name": "MiniMax-AI/cli",
+      "reason": "scope: not H3",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:minimax-ai/minimax-mcp",
+      "name": "MiniMax-AI/MiniMax-MCP",
+      "reason": "scope: not H3",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:minimax-ai/awesome-minimax-integrations",
+      "name": "MiniMax-AI/awesome-minimax-integrations",
+      "reason": "scope: not H3 (official integrations list)",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:beatapi/awesome-minimax-h3-prompts",
+      "name": "BeatAPI/awesome-minimax-h3-prompts",
+      "reason": "scope: prompt list, see our sister repo",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:xianyu110/awesome-minimax-h3-prompts",
+      "name": "xianyu110/awesome-minimax-h3-prompts",
+      "reason": "scope: prompt list, see our sister repo",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:anil-matcha/awesome-minimax-h3-prompts",
+      "name": "Anil-matcha/awesome-minimax-h3-prompts",
+      "reason": "scope: prompt list, see our sister repo",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:flaqai/awesome-minimax-h3-video-prompts",
+      "name": "flaqai/awesome-minimax-h3-video-prompts",
+      "reason": "scope: prompt list, see our sister repo",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:imaginevid/awesome-minimax-h3-prompts-and-skills",
+      "name": "imagineVid/Awesome-minimax-h3-prompts-and-skills",
+      "reason": "scope: prompt list, see our sister repo",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:aivfi/video-depth-estimation-rankings-and-stereo-video-conversion-rankings",
+      "name": "AIVFI/Video-Depth-Estimation-Rankings…",
+      "reason": "scope: mentions H3, not an H3 project",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:limingcheng07/leo2api",
+      "name": "LImingcheng07/leo2api",
+      "reason": "scope: not an H3 project",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "owner:sexgod1979",
+      "name": "sexgod1979",
+      "reason": "policy: publisher of adult-oriented H3 LoRAs — all repos blocked",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "owner:plaguekind",
+      "name": "plaguekind",
+      "reason": "policy: publisher of adult-oriented H3 models — all repos blocked",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "owner:tenstrip",
+      "name": "tenstrip",
+      "reason": "policy: publisher of adult-oriented H3 LoRAs — all repos blocked",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "owner:ellapriest45",
+      "name": "ellapriest45",
+      "reason": "policy: publisher of adult-oriented H3 LoRAs — all repos blocked",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "owner:die2025",
+      "name": "die2025",
+      "reason": "policy: publisher of adult-oriented H3 LoRAs — all repos blocked",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "owner:naughtytimes",
+      "name": "naughtytimes",
+      "reason": "policy: publisher of adult-oriented H3 LoRAs — all repos blocked",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "owner:sakamakismile",
+      "name": "sakamakismile",
+      "reason": "policy: publisher of uncensored text encoders — all repos blocked",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "owner:drowzeys",
+      "name": "drowzeys",
+      "reason": "policy: builds on the uncensored Heretic text encoder — all repos blocked",
+      "date": "2026-08-14"
+    },
+    {
+      "key": "gh:jlucasmcrell/comfyui-h3-multishot",
+      "name": "jlucasmcrell/ComfyUI-H3-Multishot",
+      "reason": "star count collapsed 70 -> 2 between 2026-08-14 and 2026-08-18 with no repo recreation — consistent with inflated stars being purged; now far below the bar",
+      "date": "2026-08-18"
+    }
+  ]
+}

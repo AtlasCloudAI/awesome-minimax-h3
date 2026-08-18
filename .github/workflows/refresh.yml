@@ -1,0 +1,72 @@
+name: Refresh entry data
+
+# The popularity figures and the "verified on" badge are only meaningful if
+# something keeps them true. This re-checks every entry against the live APIs,
+# regenerates both READMEs, and commits the result.
+on:
+  schedule:
+    - cron: '0 2 * * 1,4'   # Mon & Thu, 02:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - run: npm ci --no-audit --no-fund
+
+      # Aborts with a non-zero exit if more than 10% of entries could not be
+      # checked, so a bad network day never publishes a half-refreshed list
+      # under a fresh verification date.
+      - name: Re-check every entry
+        env:
+          # Lifts the anonymous rate limit; without it 129 sequential GitHub
+          # lookups get throttled and the run aborts.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python3 scripts/refresh.py
+
+      - name: Regenerate READMEs
+        run: npm run generate
+
+      - name: Commit if anything moved
+        run: |
+          set -euo pipefail
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if git diff --quiet -- data README.md i18n; then
+            echo "nothing changed"
+            exit 0
+          fi
+          git add data README.md i18n
+          {
+            cat refresh-subject.txt
+            echo
+            echo "Automated re-check against the GitHub, Hugging Face and Civitai APIs."
+            echo
+            echo "Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
+          } > .commit-msg
+          git commit -F .commit-msg
+          rm -f .commit-msg
+          git push
+
+      - name: Publish the report to the run summary
+        if: always()
+        run: cat refresh-report.md >> "$GITHUB_STEP_SUMMARY" || true

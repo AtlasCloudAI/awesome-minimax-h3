@@ -22,6 +22,10 @@ interface Item {
   tag?: string
   trick?: string
   updated?: string
+  /** Set by refresh.py when a link stops resolving; such entries are hidden
+   *  from the READMEs but kept in the data during the grace period. */
+  unavailableSince?: string
+  archived?: boolean
   metrics: { stars?: number; likes?: number; downloads?: number }
   civitaiType?: string
   note: Record<Locale, string>
@@ -33,7 +37,25 @@ interface Data {
   sections: Section[]
 }
 
-const data: Data = JSON.parse(readFileSync(join(ROOT, 'data/ecosystem.json'), 'utf8'))
+const raw: Data = JSON.parse(readFileSync(join(ROOT, 'data/ecosystem.json'), 'utf8'))
+
+// Entries that stopped resolving are withheld from the published list while
+// they sit out their grace period, so a reader never meets a dead link.
+const data: Data = {
+  ...raw,
+  sections: raw.sections
+    .map((s) => ({
+      ...s,
+      groups: s.groups
+        .map((g) => ({ ...g, items: g.items.filter((i) => !i.unavailableSince) }))
+        .filter((g) => g.items.length),
+    }))
+    .filter((s) => s.groups.length),
+}
+const liveCount = data.sections.reduce(
+  (n, s) => n + s.groups.reduce((m, g) => m + g.items.length, 0), 0)
+const withheld = raw.meta.total - liveCount
+data.meta = { ...raw.meta, total: liveCount }
 
 /* ---------------------------------------------------------------- copy --- */
 
@@ -81,8 +103,16 @@ const T = {
   },
   maintTitle: { en: 'How this list stays current', zh: '清单怎么保持更新' },
   maint: {
-    en: `Entries live in [\`data/ecosystem.json\`](${REPO}/blob/main/data/ecosystem.json); both READMEs are generated from it by \`npm run generate\`. Edit the JSON, not the Markdown. MiniMax keeps its own [community picks page](https://hailuoai.com/h3-open#featured) updated, and this list is periodically reconciled against it.`,
-    zh: `条目数据在 [\`data/ecosystem.json\`](${REPO}/blob/main/data/ecosystem.json)，两份 README 都由 \`npm run generate\` 生成。改 JSON，别改 Markdown。MiniMax 官方维护着一个持续更新的[社区精选页](https://hailuoai.com/h3-open#featured)，本清单会定期与它对齐。`,
+    en: `Twice a week a [GitHub Action](${REPO}/blob/main/.github/workflows/refresh.yml) re-checks every entry against the GitHub, Hugging Face and Civitai APIs: figures and dates are refreshed, renamed repositories are followed, and anything that stops resolving is withheld from the list — then deleted if it is still gone three weeks later. If more than a tenth of the run fails, it publishes nothing rather than stamp a verification date the entries did not earn.
+
+A [weekly sweep](${REPO}/blob/main/.github/workflows/discover.yml) looks for H3 projects that are missing here and clear the bar, and files them as a review issue. Nothing is ever added automatically — whether a project does something no listed project already does is not a question a query can answer.
+
+Entries live in [\`data/ecosystem.json\`](${REPO}/blob/main/data/ecosystem.json) and both READMEs are generated from it by \`npm run generate\`; edit the JSON, not the Markdown. MiniMax keeps its own [community picks page](https://hailuoai.com/h3-open#featured) updated, and this list is reconciled against it.`,
+    zh: `每周两次，[GitHub Action](${REPO}/blob/main/.github/workflows/refresh.yml) 会拿 GitHub / Hugging Face / Civitai 的 API 把每一条重新核一遍：刷新热度与日期、跟随仓库改名、把打不开的条目撤下——三周后仍然打不开就删除。如果单次运行有超过一成的条目没核成功，它宁可什么都不发布，也不给这些条目盖一个它们没挣到的核验日期。
+
+另有[每周一次的扫描](${REPO}/blob/main/.github/workflows/discover.yml)，去找那些够门槛却还没收录的 H3 项目，整理成一个 review issue。但**不会自动收录**——"它能做什么别人做不到的事"，这个问题没有哪个查询能回答。
+
+条目数据在 [\`data/ecosystem.json\`](${REPO}/blob/main/data/ecosystem.json)，两份 README 都由 \`npm run generate\` 生成；改 JSON，别改 Markdown。MiniMax 官方维护着一个持续更新的[社区精选页](https://hailuoai.com/h3-open#featured)，本清单会与它对齐。`,
   },
   licenseTitle: { en: 'License', zh: '许可' },
   license: {
@@ -192,6 +222,7 @@ function badge(it: Item, locale: Locale): string {
   if (likes != null) bits.push(`${compact(likes)}♥`)
   if (downloads != null) bits.push(`${compact(downloads)}↓`)
   if (it.updated) bits.push(it.updated)
+  if (it.archived) bits.push(locale === 'en' ? 'archived' : '已归档')
   if (!bits.length) return ''
   return ` \`${bits.join(' · ')}\``
 }
@@ -303,6 +334,15 @@ function render(locale: Locale): string {
   out.push(`## ${T.maintTitle[locale]}`)
   out.push('')
   out.push(T.maint[locale])
+  if (withheld > 0) {
+    out.push('')
+    out.push(locale === 'en'
+      ? `${withheld} entr${withheld === 1 ? 'y is' : 'ies are'} currently withheld: `
+        + 'their links stopped resolving and they are held out of the list while '
+        + 'we wait to see whether they come back.'
+      : `当前有 ${withheld} 条被暂时撤下：它们的链接已无法访问，正在观察期内，`
+        + '等确认是否恢复。')
+  }
   out.push('')
   out.push(`## ${T.contribTitle[locale]}`)
   out.push('')
