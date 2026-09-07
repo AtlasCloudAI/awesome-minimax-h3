@@ -1,6 +1,6 @@
 # Awesome MiniMax H3
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Entries](https://img.shields.io/badge/entries-137-blue.svg)](https://github.com/AtlasCloudAI/awesome-minimax-h3) [![Verified](https://img.shields.io/badge/links%20verified-2026--09--03-brightgreen.svg)](https://github.com/AtlasCloudAI/awesome-minimax-h3)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Entries](https://img.shields.io/badge/entries-137-blue.svg)](https://github.com/AtlasCloudAI/awesome-minimax-h3) [![Verified](https://img.shields.io/badge/links%20verified-2026--09--07-brightgreen.svg)](https://github.com/AtlasCloudAI/awesome-minimax-h3)
 
 > 围绕 MiniMax H3 长出来的一切——这是一个开放权重的全模态视频模型，画面与原生音频一起生成。权重、量化、LoRA、ComfyUI 节点、现成工作流，以及社区挖出来的各种玩法。每条都实测过、带日期。
 
@@ -26,7 +26,7 @@
 - [MiniMax H3 是什么？](#minimax-h3-是什么)
 - [收录标准](#收录标准)
 
-**条目怎么读。** 每条都带热度与最后更新时间，均为 2026-09-03 从官方 API 实测读取。`⭐` 表示这个社区项目被 MiniMax 官方点过名（开源一周盘点或社区精选页）——所以「官方」那一节里不标，那节本来就整节都是官方的。
+**条目怎么读。** 每条都带热度与最后更新时间，均为 2026-09-07 从官方 API 实测读取。`⭐` 表示这个社区项目被 MiniMax 官方点过名（开源一周盘点或社区精选页）——所以「官方」那一节里不标，那节本来就整节都是官方的。
 
 ---
 
@@ -36,8 +36,8 @@
 
 ### 模型与权重
 
-- [MiniMax-AI/MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3) `7.9k★ · 2026-08-15` — 官方仓库——推理代码、模型卡与各任务参考管线。
-- [MiniMaxAI/MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3) `4.8k♥ · 5.5M↓ · 2026-08-13` — Hugging Face 官方权重。
+- [MiniMax-AI/MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3) `8.2k★ · 2026-08-15` — 官方仓库——推理代码、模型卡与各任务参考管线。
+- [MiniMaxAI/MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3) `5k♥ · 5M↓ · 2026-08-13` — Hugging Face 官方权重。
 - [MiniMax/MiniMax-H3（ModelScope）](https://modelscope.cn/models/MiniMax/MiniMax-H3) — ModelScope 官方权重——中国大陆访问更快的镜像。
 
 ### 文档、API 与社区
@@ -61,8 +61,8 @@
 - ⭐ [ComfyUI 官方 H3 教程](https://docs.comfy.org/tutorials/video/minimax/minimax-h3) — 本地首次跑通阻力最小的路径。
 - ⭐ [Comfy 官方模板：文生视频](https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_minimax_h3_t2v.json) — 官方 t2v 工作流模板。
 - ⭐ [Comfy 官方模板：参考生视频](https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_minimax_h3_r2v.json) — 官方 r2v 工作流模板。
-- [nkxx188/ComfyUI-MiniMaxH3-Easy](https://github.com/nkxx188/ComfyUI-MiniMaxH3-Easy) `603★ · 2026-09-02` — 一套节点覆盖 t2v / i2v / 首尾帧 / 参考四种模式。
-- [LeonQ8/ComfyUI-ALLinONE-MinimaxH3](https://github.com/LeonQ8/ComfyUI-ALLinONE-MinimaxH3) `304★ · 2026-08-31` — 整条 H3 管线塞进一个节点——选模式、填提示词或参考、点生成。不用连线，也不用在十几个节点包里翻哪个工作流才对。
+- [nkxx188/ComfyUI-MiniMaxH3-Easy](https://github.com/nkxx188/ComfyUI-MiniMaxH3-Easy) `659★ · 2026-09-06` — 一套节点覆盖 t2v / i2v / 首尾帧 / 参考四种模式。
+- [LeonQ8/ComfyUI-ALLinONE-MinimaxH3](https://github.com/LeonQ8/ComfyUI-ALLinONE-MinimaxH3) `313★ · 2026-08-31` — 整条 H3 管线塞进一个节点——选模式、填提示词或参考、点生成。不用连线，也不用在十几个节点包里翻哪个工作流才对。
 
 ### 推理框架
 
@@ -72,11 +72,11 @@
 
 ### 本地与跨平台
 
-- ⭐ [antirez/h3.c](https://github.com/antirez/h3.c) `2.5k★ · 2026-08-11` — Redis 作者 antirez 用 C + Metal 从零重写的 Apple Silicon 原生推理引擎：直读 safetensors，Qwen 文/视编码器 + DiT + 双 VAE 全装进一个原生 Mac 程序，不依赖 Python/PyTorch。支持文生音视频、首尾帧与 Ref2VA。
-- [deepbeepmeep/Wan2GP](https://github.com/deepbeepmeep/Wan2GP) `9.1k★ · 2026-09-02` — 在低显存消费级显卡上跑 H3，配套 DeepBeepMeep 打包权重。
-- [inlineresearch/Inline-Studio](https://github.com/inlineresearch/Inline-Studio) `283★ · 2026-09-02` — 节点式 AI 影视创作，跑本地 GPU。
-- [PipeNetwork/minimax-h3-mlx](https://github.com/PipeNetwork/minimax-h3-mlx) `71★ · 2026-08-10` — 33B 视频+音频联合管线的 MLX 移植，与参考实现做过对齐验证。
-- [mrbizarro/Phosphene](https://github.com/mrbizarro/Phosphene) `206★ · 2026-09-02` — 在 Mac 上做视频、图像与角色 LoRA 训练，全走 MLX：不要 PyTorch、不要 CUDA、不上云、不用 API key。Pinokio 一键安装，还能与 LTX-2.5 并跑。
+- ⭐ [antirez/h3.c](https://github.com/antirez/h3.c) `2.6k★ · 2026-08-11` — Redis 作者 antirez 用 C + Metal 从零重写的 Apple Silicon 原生推理引擎：直读 safetensors，Qwen 文/视编码器 + DiT + 双 VAE 全装进一个原生 Mac 程序，不依赖 Python/PyTorch。支持文生音视频、首尾帧与 Ref2VA。
+- [deepbeepmeep/Wan2GP](https://github.com/deepbeepmeep/Wan2GP) `9.2k★ · 2026-09-07` — 在低显存消费级显卡上跑 H3，配套 DeepBeepMeep 打包权重。
+- [OpenCharAI/OpenChar](https://github.com/OpenCharAI/OpenChar) `289★ · 2026-09-07` — 节点式 AI 影视创作，跑本地 GPU。
+- [PipeNetwork/minimax-h3-mlx](https://github.com/PipeNetwork/minimax-h3-mlx) `73★ · 2026-08-10` — 33B 视频+音频联合管线的 MLX 移植，与参考实现做过对齐验证。
+- [mrbizarro/Phosphene](https://github.com/mrbizarro/Phosphene) `211★ · 2026-09-07` — 在 Mac 上做视频、图像与角色 LoRA 训练，全走 MLX：不要 PyTorch、不要 CUDA、不上云、不用 API key。Pinokio 一键安装，还能与 LTX-2.5 并跑。
 
 ### 特定硬件
 
@@ -84,15 +84,15 @@
 - ⭐ [Sol Engine — 数据中心部署报告](https://nvlabs.github.io/Sana/Sol-Engine/H3/) — 8×GB200 / 1344×768 / 24fps / 124 帧 / 50 步：3.95× vs Diffusers、2.80× vs SGLang。
 - ⭐ [Sol Engine — 桌面级部署报告](https://nvlabs.github.io/Sana/Sol-Engine/H3-OnDevice/) — DGX Spark 3.92×、RTX 5090 4.52×。
 - [Sol 视频推理引擎（论文）](https://arxiv.org/pdf/2606.23743) — 上述数字背后的方法论。
-- ⭐ [charlie12345/R9700AIProComfyUIPatch](https://github.com/charlie12345/R9700AIProComfyUIPatch) `18★ · 2026-08-08` — 面向 RDNA4 Radeon AI PRO R9700 + ROCm 的 ComfyUI 补丁：优化 partial RoPE、长序列注意力与模型加载。在 32GB R9700 上按 864×480 / 124 帧 / 20 步实测提速。
+- ⭐ [charlie12345/R9700AIProComfyUIPatch](https://github.com/charlie12345/R9700AIProComfyUIPatch) `20★ · 2026-08-08` — 面向 RDNA4 Radeon AI PRO R9700 + ROCm 的 ComfyUI 补丁：优化 partial RoPE、长序列注意力与模型加载。在 32GB R9700 上按 864×480 / 124 帧 / 20 步实测提速。
 
 ### 在线试玩
 
-- ⭐ [MiniMaxAI/MiniMax-H3-Turbo-Lora](https://huggingface.co/spaces/MiniMaxAI/MiniMax-H3-Turbo-Lora) `360♥ · 2026-08-25` — 官方 Space，跑 Turbo LoRA。
-- [multimodalart/minimax-h3](https://huggingface.co/spaces/multimodalart/minimax-h3) `281♥ · 2026-08-22` — 社区 likes 最高的 Space。
-- [mrfakename/minimax-h3-ultra-fast](https://huggingface.co/spaces/mrfakename/minimax-h3-ultra-fast) `197♥ · 2026-08-08` — 少步数版本，适合快速尝鲜。
+- ⭐ [MiniMaxAI/MiniMax-H3-Turbo-Lora](https://huggingface.co/spaces/MiniMaxAI/MiniMax-H3-Turbo-Lora) `383♥ · 2026-08-25` — 官方 Space，跑 Turbo LoRA。
+- [multimodalart/minimax-h3](https://huggingface.co/spaces/multimodalart/minimax-h3) `289♥ · 2026-08-22` — 社区 likes 最高的 Space。
+- [mrfakename/minimax-h3-ultra-fast](https://huggingface.co/spaces/mrfakename/minimax-h3-ultra-fast) `210♥ · 2026-09-04` — 少步数版本，适合快速尝鲜。
 - [multimodalart/minimax-h3-reference](https://huggingface.co/spaces/multimodalart/minimax-h3-reference) `86♥ · 2026-08-16` — 在浏览器里试参考条件（Ref2VA）模式。
-- [akhaliq/MiniMax-H3-Turbo-Lora](https://huggingface.co/spaces/akhaliq/MiniMax-H3-Turbo-Lora) `85♥ · 2026-08-24` — 另一个托管的 Turbo LoRA demo。
+- [akhaliq/MiniMax-H3-Turbo-Lora](https://huggingface.co/spaces/akhaliq/MiniMax-H3-Turbo-Lora) `88♥ · 2026-08-24` — 另一个托管的 Turbo LoRA demo。
 - [geocine/MiniMax-H3-Prompt-Enhancer](https://huggingface.co/spaces/geocine/MiniMax-H3-Prompt-Enhancer) `23♥ · 2026-08-09` — 把粗略想法扩写成适配 H3 的提示词。
 - [Atlas Cloud — 托管 H3 API](https://www.atlascloud.ai/models/minimax/h3/text-to-video?utm_source=github&utm_campaign=awesome-minimax-h3) — 托管的 t2v / i2v / ref2v 接口，适合不想让 42GB 常驻本地的情况。利益相关：由维护本清单的团队运营。
 
@@ -102,29 +102,29 @@
 
 ### 打包版
 
-- ⭐ [Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3) `1.7k♥ · 22.7M↓ · 2026-08-25` — ComfyUI 官方打包版，按下载量看多数人实际就是这样跑 H3 的：裁掉 4 成调制权重 + INT8 ConvRot + 定制 kernel，123.6GB → 42.5GB。
-- [DeepBeepMeep/MiniMax-H3](https://huggingface.co/DeepBeepMeep/MiniMax-H3) `54♥ · 600.8k↓ · 2026-08-28` — Wan2GP 作者的低显存打包。
+- ⭐ [Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3) `1.7k♥ · 19.6M↓ · 2026-09-06` — ComfyUI 官方打包版，按下载量看多数人实际就是这样跑 H3 的：裁掉 4 成调制权重 + INT8 ConvRot + 定制 kernel，123.6GB → 42.5GB。
+- [DeepBeepMeep/MiniMax-H3](https://huggingface.co/DeepBeepMeep/MiniMax-H3) `56♥ · 464.2k↓ · 2026-09-06` — Wan2GP 作者的低显存打包。
 
 ### 量化
 
-- [realrebelai/MiniMax-H3_GGUFs](https://huggingface.co/realrebelai/MiniMax-H3_GGUFs) *(GGUF)* `212♥ · 541.5k↓ · 2026-08-08` — likes 最高的 GGUF 合集。
-- [Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot](https://huggingface.co/Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot) *(NVFP4 · INT4/INT8 ConvRot)* `221♥ · 810.1k↓ · 2026-08-15` — 混合精度构建；社区量化里下载量最高。
-- [unsloth/MiniMax-H3-GGUF](https://huggingface.co/unsloth/MiniMax-H3-GGUF) *(GGUF)* `254♥ · 484.7k↓ · 2026-08-14` — Unsloth 出品的 GGUF 转换。
-- [Abiray/MiniMax-H3-GGUF](https://huggingface.co/Abiray/MiniMax-H3-GGUF) *(GGUF)* `128♥ · 1.2M↓ · 2026-08-08` — 使用面很广的 GGUF 合集。
-- [lilcheaty/MiniMax-H3-NVFP4](https://huggingface.co/lilcheaty/MiniMax-H3-NVFP4) *(NVFP4)* `97♥ · 2026-08-05` — 面向 Blackwell 级显卡的 NVFP4。
-- [molbal/MiniMax-H3-GGUF](https://huggingface.co/molbal/MiniMax-H3-GGUF) *(GGUF)* `54♥ · 231.5k↓ · 2026-08-12` — 另一条 GGUF 线。
-- [leejet/MiniMax-H3-GGUF](https://huggingface.co/leejet/MiniMax-H3-GGUF) *(GGUF)* `19♥ · 92.4k↓ · 2026-08-30` — 出自 stable-diffusion.cpp 作者之手。
-- [Abiray/MiniMax-H3-Pruned-GGUF](https://huggingface.co/Abiray/MiniMax-H3-Pruned-GGUF) *(GGUF)* `57♥ · 244.3k↓ · 2026-08-07` — 基于 pruned 权重的 GGUF——在仍跟随 ComfyUI 打包版的前提下体积最小的一条路。
+- [realrebelai/MiniMax-H3_GGUFs](https://huggingface.co/realrebelai/MiniMax-H3_GGUFs) *(GGUF)* `214♥ · 365.3k↓ · 2026-08-08` — likes 最高的 GGUF 合集。
+- [Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot](https://huggingface.co/Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot) *(NVFP4 · INT4/INT8 ConvRot)* `224♥ · 299.1k↓ · 2026-08-15` — 混合精度构建；社区量化里下载量最高。
+- [unsloth/MiniMax-H3-GGUF](https://huggingface.co/unsloth/MiniMax-H3-GGUF) *(GGUF)* `262♥ · 620.7k↓ · 2026-08-14` — Unsloth 出品的 GGUF 转换。
+- [Abiray/MiniMax-H3-GGUF](https://huggingface.co/Abiray/MiniMax-H3-GGUF) *(GGUF)* `128♥ · 1.1M↓ · 2026-08-08` — 使用面很广的 GGUF 合集。
+- [lilcheaty/MiniMax-H3-NVFP4](https://huggingface.co/lilcheaty/MiniMax-H3-NVFP4) *(NVFP4)* `102♥ · 2026-08-05` — 面向 Blackwell 级显卡的 NVFP4。
+- [molbal/MiniMax-H3-GGUF](https://huggingface.co/molbal/MiniMax-H3-GGUF) *(GGUF)* `55♥ · 174.2k↓ · 2026-08-12` — 另一条 GGUF 线。
+- [leejet/MiniMax-H3-GGUF](https://huggingface.co/leejet/MiniMax-H3-GGUF) *(GGUF)* `19♥ · 69k↓ · 2026-08-30` — 出自 stable-diffusion.cpp 作者之手。
+- [Abiray/MiniMax-H3-Pruned-GGUF](https://huggingface.co/Abiray/MiniMax-H3-Pruned-GGUF) *(GGUF)* `59♥ · 269.8k↓ · 2026-08-07` — 基于 pruned 权重的 GGUF——在仍跟随 ComfyUI 打包版的前提下体积最小的一条路。
 
 ### 分离组件
 
-- [Kijai/MiniMax-H3_comfy](https://huggingface.co/Kijai/MiniMax-H3_comfy) `411♥ · 2026-08-13` — Kijai 的 ComfyUI 转换合集——事实标准组件集，含降 rank 的 LoRA。
-- [Kijai/MiniMax-H3-experimental](https://huggingface.co/Kijai/MiniMax-H3-experimental) `399♥ · 2026-08-29` — 同作者的实验版本。
-- [Kijai/MiniMax-H3-TAE](https://huggingface.co/Kijai/MiniMax-H3-TAE) `161♥ · 2026-08-05` — 微型自编码器——用快速预览替代整段 VAE 解码。
-- [NicoLab28/ClipProj-MiniMax-H3](https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3) `140♥ · 2026-08-16` — 投影后的文本编码器：15.7GB → 5.2GB。
-- [Mamad8/MiniMax-H3-Image-VAE](https://huggingface.co/Mamad8/MiniMax-H3-Image-VAE) `72♥ · 2026-08-08` — 拆出的图像 VAE，配合单帧玩法。
-- [nicolab28/ComfyUI-ClipProj](https://github.com/nicolab28/ComfyUI-ClipProj) `130★ · 2026-08-17` — ClipProj 的 ComfyUI 端——用一个学出来的线性投影把大文本编码器换成小的。
-- [smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models](https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models) `193♥ · 2026-08-16` — 预先合并好的 fl2va/ref2va 混合模型，省得自己用混合加载器拼。
+- [Kijai/MiniMax-H3_comfy](https://huggingface.co/Kijai/MiniMax-H3_comfy) `417♥ · 2026-08-13` — Kijai 的 ComfyUI 转换合集——事实标准组件集，含降 rank 的 LoRA。
+- [Kijai/MiniMax-H3-experimental](https://huggingface.co/Kijai/MiniMax-H3-experimental) `418♥ · 2026-08-29` — 同作者的实验版本。
+- [Kijai/MiniMax-H3-TAE](https://huggingface.co/Kijai/MiniMax-H3-TAE) `164♥ · 2026-08-05` — 微型自编码器——用快速预览替代整段 VAE 解码。
+- [NicoLab28/ClipProj-MiniMax-H3](https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3) `142♥ · 2026-08-16` — 投影后的文本编码器：15.7GB → 5.2GB。
+- [Mamad8/MiniMax-H3-Image-VAE](https://huggingface.co/Mamad8/MiniMax-H3-Image-VAE) `75♥ · 2026-08-08` — 拆出的图像 VAE，配合单帧玩法。
+- [nicolab28/ComfyUI-ClipProj](https://github.com/nicolab28/ComfyUI-ClipProj) `137★ · 2026-08-17` — ClipProj 的 ComfyUI 端——用一个学出来的线性投影把大文本编码器换成小的。
+- [smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models](https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models) `218♥ · 2026-08-16` — 预先合并好的 fl2va/ref2va 混合模型，省得自己用混合加载器拼。
 
 ## 提速
 
@@ -132,27 +132,27 @@
 
 ### Turbo LoRA——20 步降到 4–8 步
 
-- ⭐ [larryvrh/MiniMax-H3-Turbo-Lora](https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora) `907♥ · 672.2k↓ · 2026-08-08` — 最早的 4 步 Turbo LoRA，含多个 ckpt / EMA 变体。4 步提速约 5×，但大动作易拖影；6–8 步能保住细节与音质。
-- [Larryvrh/ComfyUI-MiniMax-H3-Turbo](https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo) `542★ · 2026-08-14` — 配套 LoRA 加载节点与 Turbo 采样器，适配 BF16 / INT8 ConvRot / pruned。
-- [lightx2v/Minimax-h3-Turbo](https://huggingface.co/lightx2v/Minimax-h3-Turbo) `793♥ · 977.7k↓ · 2026-08-27` — 蒸馏 Turbo 权重；方法开源在 ModelTC/Minimax-H3-Turbo。
-- [ModelTC/Minimax-H3-Turbo](https://github.com/ModelTC/Minimax-H3-Turbo) `339★ · 2026-08-27` — 上述权重背后的 4 步蒸馏方法。
-- [drbaph/MiniMax-H3-Turbo-Lora-ComfyUI](https://huggingface.co/drbaph/MiniMax-H3-Turbo-Lora-ComfyUI) `380♥ · 212.9k↓ · 2026-08-27` — 为 pruned 构建做的兼容转换。
-- [joyfox/MiniMax-H3-Turbo](https://huggingface.co/joyfox/MiniMax-H3-Turbo) `64♥ · 2026-08-12` — BF16 专用 4 步。
-- [t8star/minimax-h3-4step-turbo-loras-comfyui-exp](https://huggingface.co/t8star/minimax-h3-4step-turbo-loras-comfyui-exp) `56♥ · 2026-08-09` — 针对 int8_convrot 的版本。
-- [Abiray/MiniMax-H3-Turbo-Lora-Pruned-ComfyUI](https://huggingface.co/Abiray/MiniMax-H3-Turbo-Lora-Pruned-ComfyUI) `48♥ · 21.4k↓ · 2026-08-09` — 附带工作流 JSON。
-- [tutututututu/…-AudioVideo-20to8-NFE-LoRA](https://huggingface.co/tutututututu/Tutu-MiniMax-H3-AudioVideo-20to8-NFE-LoRA) `17♥ · 2026-08-09` — 20→8 NFE，针对保住音频做了调校。
+- ⭐ [larryvrh/MiniMax-H3-Turbo-Lora](https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora) `932♥ · 621.9k↓ · 2026-08-08` — 最早的 4 步 Turbo LoRA，含多个 ckpt / EMA 变体。4 步提速约 5×，但大动作易拖影；6–8 步能保住细节与音质。
+- [Larryvrh/ComfyUI-MiniMax-H3-Turbo](https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo) `555★ · 2026-08-14` — 配套 LoRA 加载节点与 Turbo 采样器，适配 BF16 / INT8 ConvRot / pruned。
+- [lightx2v/Minimax-h3-Turbo](https://huggingface.co/lightx2v/Minimax-h3-Turbo) `858♥ · 1.2M↓ · 2026-09-04` — 蒸馏 Turbo 权重；方法开源在 ModelTC/Minimax-H3-Turbo。
+- [ModelTC/Minimax-H3-Turbo](https://github.com/ModelTC/Minimax-H3-Turbo) `349★ · 2026-08-27` — 上述权重背后的 4 步蒸馏方法。
+- [drbaph/MiniMax-H3-Turbo-Lora-ComfyUI](https://huggingface.co/drbaph/MiniMax-H3-Turbo-Lora-ComfyUI) `390♥ · 232.6k↓ · 2026-09-04` — 为 pruned 构建做的兼容转换。
+- [joyfox/MiniMax-H3-Turbo](https://huggingface.co/joyfox/MiniMax-H3-Turbo) `65♥ · 2026-08-12` — BF16 专用 4 步。
+- [t8star/minimax-h3-4step-turbo-loras-comfyui-exp](https://huggingface.co/t8star/minimax-h3-4step-turbo-loras-comfyui-exp) `58♥ · 2026-08-09` — 针对 int8_convrot 的版本。
+- [Abiray/MiniMax-H3-Turbo-Lora-Pruned-ComfyUI](https://huggingface.co/Abiray/MiniMax-H3-Turbo-Lora-Pruned-ComfyUI) `49♥ · 20.7k↓ · 2026-08-09` — 附带工作流 JSON。
+- [tutututututu/…-AudioVideo-20to8-NFE-LoRA](https://huggingface.co/tutututututu/Tutu-MiniMax-H3-AudioVideo-20to8-NFE-LoRA) `19♥ · 2026-08-09` — 20→8 NFE，针对保住音频做了调校。
 
 ### 缓存与注意力
 
-- [kijai/ComfyUI-SolAttn_triton](https://github.com/kijai/ComfyUI-SolAttn_triton) `445★ · 2026-08-21` — 用 Triton 把 Sol-Attn 落到 ComfyUI。
-- [Saganaki22/ComfyUI-sol-attn](https://github.com/Saganaki22/ComfyUI-sol-attn) `123★ · 2026-08-13` — 另一个 Sol-Attn 集成。
-- [xmarre/ComfyUI-Spectrum-MiniMax-H3](https://github.com/xmarre/ComfyUI-Spectrum-MiniMax-H3) `620★ · 2026-09-02` — 频谱预测加速。
-- [HELPMEEADICE/TE-Speed-MiniMaxH3-OSS](https://github.com/HELPMEEADICE/TE-Speed-MiniMaxH3-OSS) `293★ · 2026-08-03` — 文本编码器超级缓存加速。
-- [T8mars/comfyui-minimax-h3-blockcache-T8](https://github.com/T8mars/comfyui-minimax-h3-blockcache-T8) `121★ · 2026-08-24` — Block cache。
+- [kijai/ComfyUI-SolAttn_triton](https://github.com/kijai/ComfyUI-SolAttn_triton) `454★ · 2026-08-21` — 用 Triton 把 Sol-Attn 落到 ComfyUI。
+- [Saganaki22/ComfyUI-sol-attn](https://github.com/Saganaki22/ComfyUI-sol-attn) `130★ · 2026-08-13` — 另一个 Sol-Attn 集成。
+- [xmarre/ComfyUI-Spectrum-MiniMax-H3](https://github.com/xmarre/ComfyUI-Spectrum-MiniMax-H3) `635★ · 2026-09-06` — 频谱预测加速。
+- [HELPMEEADICE/TE-Speed-MiniMaxH3-OSS](https://github.com/HELPMEEADICE/TE-Speed-MiniMaxH3-OSS) `301★ · 2026-08-03` — 文本编码器超级缓存加速。
+- [T8mars/comfyui-minimax-h3-blockcache-T8](https://github.com/T8mars/comfyui-minimax-h3-blockcache-T8) `124★ · 2026-08-24` — Block cache。
 - [duckyshell/ComfyUI-MiniMaxH3-FirstBlockCache](https://github.com/duckyshell/ComfyUI-MiniMaxH3-FirstBlockCache) `98★ · 2026-08-07` — First-block cache。
 - [lihaoyun6/ComfyUI-MiniMaxH3-Cache](https://github.com/lihaoyun6/ComfyUI-MiniMaxH3-Cache) `77★ · 2026-08-03` — 专为 H3 优化的缓存加速节点。
-- [Tr1dae/ComfyUI-MiniMaxH3_LatentUpscaler](https://github.com/Tr1dae/ComfyUI-MiniMaxH3_LatentUpscaler) `230★ · 2026-08-17` — AV latent 放大。
-- [LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler](https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler) `490★ · 2026-08-28` — 用训练过的网络放大 H3 的 24 通道 latent，而不是简单插值；上高分辨率的路上省掉了昂贵的 VAE 解码再编码。
+- [Tr1dae/ComfyUI-MiniMaxH3_LatentUpscaler](https://github.com/Tr1dae/ComfyUI-MiniMaxH3_LatentUpscaler) `232★ · 2026-08-17` — AV latent 放大。
+- [LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler](https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler) `532★ · 2026-08-28` — 用训练过的网络放大 H3 的 24 通道 latent，而不是简单插值；上高分辨率的路上省掉了昂贵的 VAE 解码再编码。
 
 ## LoRA 与训练
 
@@ -160,19 +160,19 @@
 
 ### 风格 / 能力 LoRA
 
-- ⭐ [fal/MiniMax-H3-Realism-People-LoRA](https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA) `338♥ · 45.9k↓ · 2026-08-12` — 厂商训练的真人写实 LoRA：176 条视频、统一 24fps、16 组超参对比。
-- [Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime](https://huggingface.co/Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime) `73♥ · 2026-08-11` — 循环动漫手绘。
-- [Jojocodex/minimax-h3-spatial-physics-lora](https://huggingface.co/Jojocodex/minimax-h3-spatial-physics-lora) `98♥ · 9.2k↓ · 2026-08-19` — 训练目标不是画风而是空间推理与物体运动——冲着 H3 在物理上出错的地方去的。
+- ⭐ [fal/MiniMax-H3-Realism-People-LoRA](https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA) `357♥ · 57.6k↓ · 2026-08-12` — 厂商训练的真人写实 LoRA：176 条视频、统一 24fps、16 组超参对比。
+- [Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime](https://huggingface.co/Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime) `75♥ · 2026-08-11` — 循环动漫手绘。
+- [Jojocodex/minimax-h3-spatial-physics-lora](https://huggingface.co/Jojocodex/minimax-h3-spatial-physics-lora) `105♥ · 14.2k↓ · 2026-08-19` — 训练目标不是画风而是空间推理与物体运动——冲着 H3 在物理上出错的地方去的。
 
 ### 自己练一个
 
 - ⭐ [fal H3 LoRA 训练器](https://fal.ai/models/minimax/h3/t2v/trainer) — 按训练步计费的托管训练器，有 t2v / flf2v / i2v / ref2va 四个入口。参考素材同时进入 H3 视觉条件序列与 Qwen3-VL 提示词侧，因此画面与声音可联合训练；帧数、分辨率、rank、步数、参考条件比例均可调。
 - [fal — 怎么训一个 H3 LoRA](https://fal.ai/learn/devs/how-to-train-a-lora-for-minimax-h3) — 他们给的实用默认值：10–200 条 24fps 短片、rank 16 起、lr 2e-4、固定 seed 做 A/B 评估。
-- ⭐ [IAmIronMan42/MiniMax-H3-FineTuning](https://github.com/IAmIronMan42/MiniMax-H3-FineTuning) `79★ · 2026-08-10` — 基于官方 diffusers 集成的完整微调：画面与声音分别处理噪声日程，真实立体声入训。已在 8×A800 上用 2000+ 条 30s / 448×768 素材跑通。
-- [modelscope/DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio) `13k★ · 2026-09-01` — H3 完整训练链路——LoRA 训练脚本 + 模型文档。
+- ⭐ [IAmIronMan42/MiniMax-H3-FineTuning](https://github.com/IAmIronMan42/MiniMax-H3-FineTuning) `80★ · 2026-08-10` — 基于官方 diffusers 集成的完整微调：画面与声音分别处理噪声日程，真实立体声入训。已在 8×A800 上用 2000+ 条 30s / 448×768 素材跑通。
+- [modelscope/DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio) `13.1k★ · 2026-09-07` — H3 完整训练链路——LoRA 训练脚本 + 模型文档。
 - [DiffSynth — H3 LoRA 训练脚本](https://github.com/modelscope/DiffSynth-Studio/blob/main/examples/minimax_h3/model_training/lora/MiniMax-H3-FL2VA.sh) — FL2VA 的 LoRA 训练入口脚本。
-- [ostris/ai-toolkit](https://github.com/ostris/ai-toolkit) `11.9k★ · 2026-09-02` — 已加入 H3 t2v / i2v 训练。
-- [unslothai/unsloth](https://github.com/unslothai/unsloth) `75.5k★ · 2026-09-03` — 支持的训练目标中明确列出 MiniMax-H3。
+- [ostris/ai-toolkit](https://github.com/ostris/ai-toolkit) `11.9k★ · 2026-09-06` — 已加入 H3 t2v / i2v 训练。
+- [unslothai/unsloth](https://github.com/unslothai/unsloth) `75.7k★ · 2026-09-07` — 支持的训练目标中明确列出 MiniMax-H3。
 
 ## 冷门玩法
 
@@ -180,19 +180,19 @@
 
 ### 把镜头无限续下去
 
-- ⭐ [NikoDemon80/ComfyUI-H3-Motion-Context](https://github.com/NikoDemon80/ComfyUI-H3-Motion-Context) `839★ · 2026-09-02` — 递归生成：直读上一段的画面与音频 latent，截末尾 22 帧作下一段的开头条件，音频重对齐到同一条时间线——避开「解码再编码」的信息损失。
-- [ethanfel/ComfyUI-MiniMaxH3-Context-Loop](https://github.com/ethanfel/ComfyUI-MiniMaxH3-Context-Loop) `369★ · 2026-09-02` — 可审核的长片工作流：分镜规划 + 逐段预览 + 重生成 + 检查点 + 自动拼接。
-- [tritant/ComfyUI_MiniMax_H3_Extender](https://github.com/tritant/ComfyUI_MiniMax_H3_Extender) `184★ · 2026-09-02` — 把 Ref2VA 条件、Motion Context、磁盘缓存、多片段生成与图像/音频参考收进一个节点，长连续片段不用再手搭一整张图。
+- ⭐ [NikoDemon80/ComfyUI-H3-Motion-Context](https://github.com/NikoDemon80/ComfyUI-H3-Motion-Context) `914★ · 2026-09-06` — 递归生成：直读上一段的画面与音频 latent，截末尾 22 帧作下一段的开头条件，音频重对齐到同一条时间线——避开「解码再编码」的信息损失。
+- [ethanfel/ComfyUI-MiniMaxH3-Context-Loop](https://github.com/ethanfel/ComfyUI-MiniMaxH3-Context-Loop) `383★ · 2026-09-07` — 可审核的长片工作流：分镜规划 + 逐段预览 + 重生成 + 检查点 + 自动拼接。
+- [tritant/ComfyUI_MiniMax_H3_Extender](https://github.com/tritant/ComfyUI_MiniMax_H3_Extender) `192★ · 2026-09-06` — 把 Ref2VA 条件、Motion Context、磁盘缓存、多片段生成与图像/音频参考收进一个节点，长连续片段不用再手搭一整张图。
 
 ### 拿视频模型编辑单张图
 
 - ⭐ [tori29umai0123/ComfyUI-MiniMaxH3-SingleFrame](https://github.com/tori29umai0123/ComfyUI-MiniMaxH3-SingleFrame) `83★ · 2026-08-19` — 零专门训练就把 H3 变成图像编辑器：输入图钉在第 0 帧 → 直接生成单帧 AV latent → 解码为图像；另一模式钉住首尾两图取中间帧。含 Temporal RoPE Patch 与 Empty Single Frame Latent 节点。
 - [Comfy-Org/ComfyUI#15416](https://github.com/Comfy-Org/ComfyUI/issues/15416) — 单帧 VAE 解码伪影的跟踪 issue——自己提单前先看这条。
-- [thaakeno/ComfyUI-MiniMax-H3-Studio](https://github.com/thaakeno/ComfyUI-MiniMax-H3-Studio) `90★ · 2026-08-20` — 把 H3 做成一套真正能用的图像工作流：文生图、编辑、多参考生成、LightX 加速、人脸精修、预览与基准——不用自己搭 H3 的图。
+- [thaakeno/ComfyUI-MiniMax-H3-Studio](https://github.com/thaakeno/ComfyUI-MiniMax-H3-Studio) `95★ · 2026-08-20` — 把 H3 做成一套真正能用的图像工作流：文生图、编辑、多参考生成、LightX 加速、人脸精修、预览与基准——不用自己搭 H3 的图。
 
 ### 其他
 
-- [matlowai/ComfyUI-MAINodes](https://github.com/matlowai/ComfyUI-MAINodes) `128★ · 2026-09-02` — Contact-Sheet 扩散（一次生成里出同一主体的多个视角）+ 用于推理期 de-roping 的 Motion Lab。
+- [matlowai/ComfyUI-MAINodes](https://github.com/matlowai/ComfyUI-MAINodes) `140★ · 2026-09-05` — Contact-Sheet 扩散（一次生成里出同一主体的多个视角）+ 用于推理期 de-roping 的 Motion Lab。
 
 ### 纯音频生成，不需要任何仓库
 
@@ -202,45 +202,45 @@
 
 H3 出的是镜头，不是成片。这些项目补的是镜头之上的那层：分镜规划、连贯性、批量、剪辑与导出。
 
-- ⭐ [chiphoton/MiniMax-H3-Codex-Drama](https://github.com/chiphoton/MiniMax-H3-Codex-Drama) `28★ · 2026-09-01` — 可安装的 Codex 插件，内置 9 项 Skills，经 ComfyUI MCP 调度本地 H3：角色与场景设定 → 分镜关键帧 → 按镜头选工作流 → FFmpeg 剪辑混音字幕导出质检。提示词、素材、候选镜头与选择结果全留档，中断可续、每次新尝试各留版本。
-- ⭐ [huangserva/ComfyUI_MiniMaxH3_Director](https://github.com/huangserva/ComfyUI_MiniMaxH3_Director) `884★ · 2026-08-04` — 分段计划 + 条件编码 + 采样解码 + 导出整合进一个节点；PySceneDetect 自动切场景，上一段结尾动作与音频作为下一段上下文。
-- [AIMixer/ComfyUI_MiniMaxH3_Director](https://github.com/AIMixer/ComfyUI_MiniMaxH3_Director) `1.3k★ · 2026-09-02` — 多段导演，适配官方节点。
-- [seesee75-commits/ComfyUI-MiniMaxH3-Director](https://github.com/seesee75-commits/ComfyUI-MiniMaxH3-Director) `281★ · 2026-08-16` — 时间轴故事板。
-- [open-video-ai/open-video](https://github.com/open-video-ai/open-video) `114★ · 2026-08-18` — 「MiniMax H3 版的 Ollama」——架在 ComfyUI 之上的本地导演层。
+- ⭐ [chiphoton/MiniMax-H3-Codex-Drama](https://github.com/chiphoton/MiniMax-H3-Codex-Drama) `29★ · 2026-09-01` — 可安装的 Codex 插件，内置 9 项 Skills，经 ComfyUI MCP 调度本地 H3：角色与场景设定 → 分镜关键帧 → 按镜头选工作流 → FFmpeg 剪辑混音字幕导出质检。提示词、素材、候选镜头与选择结果全留档，中断可续、每次新尝试各留版本。
+- ⭐ [huangserva/ComfyUI_MiniMaxH3_Director](https://github.com/huangserva/ComfyUI_MiniMaxH3_Director) `897★ · 2026-08-04` — 分段计划 + 条件编码 + 采样解码 + 导出整合进一个节点；PySceneDetect 自动切场景，上一段结尾动作与音频作为下一段上下文。
+- [AIMixer/ComfyUI_MiniMaxH3_Director](https://github.com/AIMixer/ComfyUI_MiniMaxH3_Director) `1.4k★ · 2026-09-07` — 多段导演，适配官方节点。
+- [seesee75-commits/ComfyUI-MiniMaxH3-Director](https://github.com/seesee75-commits/ComfyUI-MiniMaxH3-Director) `283★ · 2026-08-16` — 时间轴故事板。
+- [open-video-ai/open-video](https://github.com/open-video-ai/open-video) `116★ · 2026-08-18` — 「MiniMax H3 版的 Ollama」——架在 ComfyUI 之上的本地导演层。
 - [yg496/CS-H3-Multimodal-Director](https://github.com/yg496/CS-H3-Multimodal-Director) `57★ · 2026-08-05` — 多模态导演套件。
 
 ## Agent Skills
 
 可安装的 skill，让编码 agent（Claude Code、Codex、OpenCode 等）替你写提示词、驱动整条流水线。
 
-- [Rimagination/h3lite](https://github.com/Rimagination/h3lite) `398★ · 2026-08-23` — 硬件感知的 Codex skill，经 ComfyUI 本地出片：它先摸清你的机器再替你选路线（低显存快跑 / 高质量），不用自己纠结。中英双语文档。
-- [benjiyaya/Minimax-H3-Prompt-AgentSkill](https://github.com/benjiyaya/Minimax-H3-Prompt-AgentSkill) `126★ · 2026-08-06` — 把素材 + 粗略想法转成规范 H3 提示词的 Agent Skill。
-- [SlavaSexton/ComfyUI-Agent-Kit](https://github.com/SlavaSexton/ComfyUI-Agent-Kit) `91★ · 2026-08-20` — 一个 ComfyUI skill，Claude Code / Codex / Gemini CLI / Qwen Code 都能驱动。
-- [T8mars/minimax-h3-prompt-skill-T8](https://github.com/T8mars/minimax-h3-prompt-skill-T8) `187★ · 2026-09-01` — 以可安装 skill 形式打包的创意 DNA 提示词案例。
-- [unknowlei/minimax-h3-opencode-skills](https://github.com/unknowlei/minimax-h3-opencode-skills) `104★ · 2026-08-09` — OpenCode skill 套件：导演、路由、多镜头规划与提示词生成。
+- [Rimagination/h3lite](https://github.com/Rimagination/h3lite) `407★ · 2026-08-23` — 硬件感知的 Codex skill，经 ComfyUI 本地出片：它先摸清你的机器再替你选路线（低显存快跑 / 高质量），不用自己纠结。中英双语文档。
+- [benjiyaya/Minimax-H3-Prompt-AgentSkill](https://github.com/benjiyaya/Minimax-H3-Prompt-AgentSkill) `129★ · 2026-08-06` — 把素材 + 粗略想法转成规范 H3 提示词的 Agent Skill。
+- [SlavaSexton/ComfyUI-Agent-Kit](https://github.com/SlavaSexton/ComfyUI-Agent-Kit) `94★ · 2026-09-03` — 一个 ComfyUI skill，Claude Code / Codex / Gemini CLI / Qwen Code 都能驱动。
+- [T8mars/minimax-h3-prompt-skill-T8](https://github.com/T8mars/minimax-h3-prompt-skill-T8) `203★ · 2026-09-06` — 以可安装 skill 形式打包的创意 DNA 提示词案例。
+- [unknowlei/minimax-h3-opencode-skills](https://github.com/unknowlei/minimax-h3-opencode-skills) `108★ · 2026-08-09` — OpenCode skill 套件：导演、路由、多镜头规划与提示词生成。
 
 ## 其他 ComfyUI 节点
 
 归不进上面几类，但确实好用的节点。
 
-- [T8mars/comfyui-minimax-h3-audio-T8](https://github.com/T8mars/comfyui-minimax-h3-audio-T8) `919★ · 2026-09-03` — 音频侧节点——多数 H3 工作流最没用起来的一块。
-- [ethanfel/ComfyUI-MiniMax-H3-Guide](https://github.com/ethanfel/ComfyUI-MiniMax-H3-Guide) `223★ · 2026-08-11` — 把提示词规范化成 H3 吃得准的形状。
-- [Carasibana/ComfyUI-H3-FaceRefine](https://github.com/Carasibana/ComfyUI-H3-FaceRefine) `316★ · 2026-08-31` — 解决 H3 出片里小脸糊的问题：逐帧人脸跟踪、裁切、精修、贴回。
-- [HM-RunningHub/ComfyUI_RH_MinMaxH3](https://github.com/HM-RunningHub/ComfyUI_RH_MinMaxH3) `127★ · 2026-08-05` — RunningHub 的 H3 节点包。
-- [scottmudge/ComfyUI_MinimaxH3HybridLoader](https://github.com/scottmudge/ComfyUI_MinimaxH3HybridLoader) `161★ · 2026-08-11` — 混合加载器——把 fl2va 与 ref2va 两个模型的层/块混搭成一个。
+- [T8mars/comfyui-minimax-h3-audio-T8](https://github.com/T8mars/comfyui-minimax-h3-audio-T8) `966★ · 2026-09-06` — 音频侧节点——多数 H3 工作流最没用起来的一块。
+- [ethanfel/ComfyUI-MiniMax-H3-Guide](https://github.com/ethanfel/ComfyUI-MiniMax-H3-Guide) `229★ · 2026-08-11` — 把提示词规范化成 H3 吃得准的形状。
+- [Carasibana/ComfyUI-H3-FaceRefine](https://github.com/Carasibana/ComfyUI-H3-FaceRefine) `335★ · 2026-09-04` — 解决 H3 出片里小脸糊的问题：逐帧人脸跟踪、裁切、精修、贴回。
+- [HM-RunningHub/ComfyUI_RH_MinMaxH3](https://github.com/HM-RunningHub/ComfyUI_RH_MinMaxH3) `130★ · 2026-08-05` — RunningHub 的 H3 节点包。
+- [scottmudge/ComfyUI_MinimaxH3HybridLoader](https://github.com/scottmudge/ComfyUI_MinimaxH3HybridLoader) `164★ · 2026-08-11` — 混合加载器——把 fl2va 与 ref2va 两个模型的层/块混搭成一个。
 
 ## 提示词
 
 H3 吃的提示词形状比较特定，这些工具帮你写对。
 
-- [lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA](https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA) `179♥ · 1.1k↓ · 2026-08-07` — 改写提示词而不是改画面的 LoRA。
+- [lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA](https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA) `181♥ · 995↓ · 2026-08-07` — 改写提示词而不是改画面的 LoRA。
 - [fal — H3 提示词指南](https://fal.ai/learn/devs/minimax-h3-prompting-guide) — 提示词指南，附 44 个视频示例。
-- [1038lab/ComfyUI-MiniMax-H3-Promptor](https://github.com/1038lab/ComfyUI-MiniMax-H3-Promptor) `207★ · 2026-08-27` — 影视级提示词自动化。
-- [T8mars/comfyui-minimax-h3-prompt-enhancer-T8](https://github.com/T8mars/comfyui-minimax-h3-prompt-enhancer-T8) `224★ · 2026-09-02` — 多模态提示词增强。
-- [Adudeguyman/…-PromptBuilder](https://github.com/Adudeguyman/ComfyUI-Fantastic-MiniMaxH3-PromptBuilder) `134★ · 2026-08-23` — 提示词构建器节点。
-- [duckyshell/ComfyUI-MiniMaxH3-Prompt-Writer](https://github.com/duckyshell/ComfyUI-MiniMaxH3-Prompt-Writer) `152★ · 2026-09-03` — 跑在 Gemma 4 GGUF 上的本地多模态提示词写手，不发 API 请求。
-- [penposs/minimax-h3-video-prompt](https://github.com/penposs/minimax-h3-video-prompt) `60★ · 2026-08-04` — 从目标 + 多模态参考出发生成并复核提示词。
-- [benjiyaya/ComfyUI-H3-VisionPromptor](https://github.com/benjiyaya/ComfyUI-H3-VisionPromptor) `90★ · 2026-08-09` — 给它一个想法（可选附参考图），它返回一条把镜头、运镜词汇、对白标记、声景与音乐字段都填好的提示词。
+- [1038lab/ComfyUI-MiniMax-H3-Promptor](https://github.com/1038lab/ComfyUI-MiniMax-H3-Promptor) `215★ · 2026-09-03` — 影视级提示词自动化。
+- [T8mars/comfyui-minimax-h3-prompt-enhancer-T8](https://github.com/T8mars/comfyui-minimax-h3-prompt-enhancer-T8) `233★ · 2026-09-06` — 多模态提示词增强。
+- [Adudeguyman/…-PromptBuilder](https://github.com/Adudeguyman/ComfyUI-Fantastic-MiniMaxH3-PromptBuilder) `139★ · 2026-09-05` — 提示词构建器节点。
+- [duckyshell/ComfyUI-MiniMaxH3-Prompt-Writer](https://github.com/duckyshell/ComfyUI-MiniMaxH3-Prompt-Writer) `161★ · 2026-09-06` — 跑在 Gemma 4 GGUF 上的本地多模态提示词写手，不发 API 请求。
+- [penposs/minimax-h3-video-prompt](https://github.com/penposs/minimax-h3-video-prompt) `62★ · 2026-08-04` — 从目标 + 多模态参考出发生成并复核提示词。
+- [benjiyaya/ComfyUI-H3-VisionPromptor](https://github.com/benjiyaya/ComfyUI-H3-VisionPromptor) `92★ · 2026-08-09` — 给它一个想法（可选附参考图），它返回一条把镜头、运镜词汇、对白标记、声景与音乐字段都填好的提示词。
 
 ## 现成工作流
 
@@ -248,22 +248,22 @@ H3 吃的提示词形状比较特定，这些工具帮你写对。
 
 ### GitHub 上的
 
-- [Shrek3OnVH5/MiniMax-H3-NativeAudio-MusicVideo-Workflow](https://github.com/Shrek3OnVH5/MiniMax-H3-NativeAudio-MusicVideo-Workflow) `87★ · 2026-08-05` — 围绕 H3 原生音频搭的音乐视频工作流。
+- [Shrek3OnVH5/MiniMax-H3-NativeAudio-MusicVideo-Workflow](https://github.com/Shrek3OnVH5/MiniMax-H3-NativeAudio-MusicVideo-Workflow) `90★ · 2026-08-05` — 围绕 H3 原生音频搭的音乐视频工作流。
 
 ### Civitai 上的
 
-- [H3 [LightX2V 6-8steps] collection](https://civitai.com/models/579280) *(Workflows)* `33.9k↓` — 下载量最高的 H3 工作流合集。
-- [MiniMax H3 INT8/INT4 ConvRot](https://civitai.com/models/2830065) *(Checkpoint)* `29.5k↓` — 打包给 ComfyUI 的 ConvRot 检查点。
-- [Lonecat's Simple Workflows](https://civitai.com/models/2600919) *(Workflows)* `17.3k↓` — 刻意做简的工作流。
-- [MiniMax H3 lightx2v turbo accelerator](https://civitai.com/models/1063735) *(LORA)* `15.4k↓` — 以 LoRA 形式直接换入的 Turbo 加速。
-- [MiniMax H3: EZ Turbo / RTX Upscale / LTX Refine](https://civitai.com/models/2831976) *(Workflows)* `13.6k↓` — Turbo 加超分与精修环节。
-- [T2V / I2V / REF2V Advanced Filmmaking](https://civitai.com/models/2834514) *(Workflows)* `17.3k↓` — 一套影视流程覆盖三种输入模式。
-- [MiniMax-H3 Multishot Seamless Chain](https://civitai.com/models/2833322) *(Workflows)* `8.8k↓` — 多镜头无缝串联生成。
-- [Ultra Fastest Workflow (6GB VRAM / 16GB RAM)](https://civitai.com/models/2835250) *(Workflows)* `8.1k↓` — 真能跑起来的低配方案。
-- [SageAttention four-mode workflow](https://civitai.com/models/2831550) *(ComfyWorkflows)* `6.5k↓` — SageAttention 四种模式并列对比。
-- [4 STEPS TURBO AIO](https://civitai.com/models/2838258) *(Workflows)* `4.2k↓` — 4 步一体化配置。
-- [INT4 ConvRot (12GB VRAM)](https://civitai.com/models/2830162) *(Checkpoint)* `3.4k↓` — 把 H3 塞进 12GB 显存。
-- [SEEDVR2 upscaler + Ollama prompt helper](https://civitai.com/models/2836319) *(Workflows)* `3.6k↓` — 超分与本地提示词助手合在一张图里。
+- [H3 [LightX2V 6-8steps] collection](https://civitai.com/models/579280) *(Workflows)* `34.6k↓` — 下载量最高的 H3 工作流合集。
+- [MiniMax H3 INT8/INT4 ConvRot](https://civitai.com/models/2830065) *(Checkpoint)* `31.7k↓` — 打包给 ComfyUI 的 ConvRot 检查点。
+- [Lonecat's Simple Workflows](https://civitai.com/models/2600919) *(Workflows)* `18.1k↓` — 刻意做简的工作流。
+- [MiniMax H3 lightx2v turbo accelerator](https://civitai.com/models/1063735) *(LORA)* `16k↓` — 以 LoRA 形式直接换入的 Turbo 加速。
+- [MiniMax H3: EZ Turbo / RTX Upscale / LTX Refine](https://civitai.com/models/2831976) *(Workflows)* `14.1k↓` — Turbo 加超分与精修环节。
+- [T2V / I2V / REF2V Advanced Filmmaking](https://civitai.com/models/2834514) *(Workflows)* `18.2k↓` — 一套影视流程覆盖三种输入模式。
+- [MiniMax-H3 Multishot Seamless Chain](https://civitai.com/models/2833322) *(Workflows)* `9.1k↓` — 多镜头无缝串联生成。
+- [Ultra Fastest Workflow (6GB VRAM / 16GB RAM)](https://civitai.com/models/2835250) *(Workflows)* `8.6k↓` — 真能跑起来的低配方案。
+- [SageAttention four-mode workflow](https://civitai.com/models/2831550) *(ComfyWorkflows)* `6.9k↓` — SageAttention 四种模式并列对比。
+- [4 STEPS TURBO AIO](https://civitai.com/models/2838258) *(Workflows)* `4.4k↓` — 4 步一体化配置。
+- [INT4 ConvRot (12GB VRAM)](https://civitai.com/models/2830162) *(Checkpoint)* `3.5k↓` — 把 H3 塞进 12GB 显存。
+- [SEEDVR2 upscaler + Ollama prompt helper](https://civitai.com/models/2836319) *(Workflows)* `3.7k↓` — 超分与本地提示词助手合在一张图里。
 - [Claymation Transformation](https://civitai.com/models/1659949) *(LORA)* `1.8k↓` — 黏土动画风格。
 
 ## 教程与资讯
@@ -288,8 +288,8 @@ H3 吃的提示词形状比较特定，这些工具帮你写对。
 
 同一片地上，做得有价值的其他清单。
 
-- [wildminder/awesome-minimax-H3](https://github.com/wildminder/awesome-minimax-H3) `444★ · 2026-08-31` — 在权重、量化与节点清单上做得极细——需要文件级细节时该看它。
-- [AtlasCloudAI/awesome-minimax-h3-prompts](https://github.com/AtlasCloudAI/awesome-minimax-h3-prompts) `32★ · 2026-09-03` — 本清单的姊妹仓：官方案例 H3 提示词，每条附成片预览，20 语言。
+- [wildminder/awesome-minimax-H3](https://github.com/wildminder/awesome-minimax-H3) `471★ · 2026-09-06` — 在权重、量化与节点清单上做得极细——需要文件级细节时该看它。
+- [AtlasCloudAI/awesome-minimax-h3-prompts](https://github.com/AtlasCloudAI/awesome-minimax-h3-prompts) `33★ · 2026-09-06` — 本清单的姊妹仓：官方案例 H3 提示词，每条附成片预览，20 语言。
 
 ---
 
@@ -301,7 +301,7 @@ H3 是 MiniMax 的开放权重全模态视频模型。它不把文生视频、�
 
 - **只收 SFW。** H3 的 LoRA 生态里成人向占了不小比例，这里一概不收；去审查组件（比如被剥掉限制的文本编码器）同样不收——哪怕某些加速工作本身做得不错，只要依赖它就一起排除。
 - **热度门槛 + 一条豁免。** GitHub ≥ 50 星、Hugging Face ≥ 10 likes、Civitai ≥ 500 下载。门槛是为了挡住这个关键词下泛滥的 SEO 空壳。唯一豁免是官方点名：MiniMax 自己点过名的一律直收，不看热度——本清单最有意思的两条就只有个位数星。
-- **每条链接都能打开。** 全清单已于 2026-09-03 用 GitHub / Hugging Face / Civitai 的 API 重新核验。已转私有、404、或无法程序化验证的条目一律剔除，不凭信任沿用。
+- **每条链接都能打开。** 全清单已于 2026-09-07 用 GitHub / Hugging Face / Civitai 的 API 重新核验。已转私有、404、或无法程序化验证的条目一律剔除，不凭信任沿用。
 - **是 H3，不是 MiniMax。** 见上面的收录范围。
 
 ## 清单怎么保持更新
