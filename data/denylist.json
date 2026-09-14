@@ -336,6 +336,12 @@
       "name": "light-and-ray/Minimalistic-Comfy-Wrapper-WebUI",
       "reason": "scope: general ComfyUI front-end, not H3-specific",
       "date": "2026-08-18"
+    },
+    {
+      "key": "gh:minimaxh3comfyui/minimax-h3-comfyui",
+      "name": "MiniMaxH3ComfyUI/MiniMax-H3-ComfyUI",
+      "reason": "unreachable for 21+ days",
+      "date": "2026-09-14"
     }
   ]
 }
