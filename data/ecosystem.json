@@ -1,14 +1,14 @@
 {
   "meta": {
-    "snapshot": "2026-09-28",
+    "snapshot": "2026-10-01",
     "thresholds": {
       "github": 50,
       "hf": 10,
       "civitai": 500
     },
     "note": "Every entry re-checked against the GitHub, Hugging Face and Civitai APIs on the snapshot date.",
-    "total": 135,
-    "officialPicks": 29
+    "total": 136,
+    "officialPicks": 30
   },
   "sections": [
     {
@@ -22,7 +22,7 @@
               "name": "MiniMax-AI/MiniMax-H3",
               "url": "https://github.com/MiniMax-AI/MiniMax-H3",
               "metrics": {
-                "stars": 9312
+                "stars": 9422
               },
               "updated": "2026-08-15",
               "official": true,
@@ -36,8 +36,8 @@
               "name": "MiniMaxAI/MiniMax-H3",
               "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
               "metrics": {
-                "likes": 5735,
-                "downloads": 3672292
+                "likes": 5800,
+                "downloads": 3612196
               },
               "updated": "2026-08-13",
               "official": true,
@@ -91,8 +91,7 @@
               "note": {
                 "en": "The complete official usage handbook — first entry on the picks page.",
                 "zh": "官方完整使用手册——精选页第一条。"
-              },
-              "unavailableSince": "2026-09-28"
+              }
             },
             {
               "kind": "link",
@@ -249,9 +248,9 @@
               "name": "nkxx188/ComfyUI-MiniMaxH3-Easy",
               "url": "https://github.com/nkxx188/ComfyUI-MiniMaxH3-Easy",
               "metrics": {
-                "stars": 790
+                "stars": 798
               },
-              "updated": "2026-09-18",
+              "updated": "2026-09-28",
               "note": {
                 "en": "One node set covering t2v, i2v, first/last-frame and reference modes.",
                 "zh": "一套节点覆盖 t2v / i2v / 首尾帧 / 参考四种模式。"
@@ -262,7 +261,7 @@
               "name": "LeonQ8/ComfyUI-ALLinONE-MinimaxH3",
               "url": "https://github.com/LeonQ8/ComfyUI-ALLinONE-MinimaxH3",
               "metrics": {
-                "stars": 334
+                "stars": 335
               },
               "note": {
                 "en": "The entire H3 pipeline behind one node — pick a mode, drop in a prompt or references, generate. No graph to wire up and no hunting through a dozen node packs to find the right workflow.",
@@ -324,7 +323,7 @@
               "name": "antirez/h3.c",
               "url": "https://github.com/antirez/h3.c",
               "metrics": {
-                "stars": 2783
+                "stars": 2802
               },
               "updated": "2026-08-11",
               "official": true,
@@ -338,9 +337,9 @@
               "name": "deepbeepmeep/Wan2GP",
               "url": "https://github.com/deepbeepmeep/Wan2GP",
               "metrics": {
-                "stars": 9668
+                "stars": 9736
               },
-              "updated": "2026-09-28",
+              "updated": "2026-09-29",
               "note": {
                 "en": "Runs H3 on low-VRAM consumer cards; pairs with the DeepBeepMeep packaged weights.",
                 "zh": "在低显存消费级显卡上跑 H3，配套 DeepBeepMeep 打包权重。"
@@ -351,9 +350,9 @@
               "name": "omnichar/OmniChar",
               "url": "https://github.com/omnichar/OmniChar",
               "metrics": {
-                "stars": 433
+                "stars": 462
               },
-              "updated": "2026-09-28",
+              "updated": "2026-09-29",
               "note": {
                 "en": "Node-based AI filmmaking on your own GPU.",
                 "zh": "节点式 AI 影视创作，跑本地 GPU。"
@@ -377,13 +376,13 @@
               "name": "mrbizarro/Phosphene",
               "url": "https://github.com/mrbizarro/Phosphene",
               "metrics": {
-                "stars": 239
+                "stars": 241
               },
               "note": {
                 "en": "Video, image and character-LoRA training on a Mac, all in MLX: no PyTorch, no CUDA, no cloud, no API key. One-click Pinokio install, and it runs LTX-2.5 alongside H3.",
                 "zh": "在 Mac 上做视频、图像与角色 LoRA 训练，全走 MLX：不要 PyTorch、不要 CUDA、不上云、不用 API key。Pinokio 一键安装，还能与 LTX-2.5 并跑。"
               },
-              "updated": "2026-09-28"
+              "updated": "2026-09-30"
             }
           ]
         },
@@ -450,7 +449,7 @@
               "name": "charlie12345/R9700AIProComfyUIPatch",
               "url": "https://github.com/charlie12345/R9700AIProComfyUIPatch",
               "metrics": {
-                "stars": 26
+                "stars": 27
               },
               "updated": "2026-08-08",
               "official": true,
@@ -469,7 +468,7 @@
               "name": "MiniMaxAI/MiniMax-H3-Turbo-Lora",
               "url": "https://huggingface.co/spaces/MiniMaxAI/MiniMax-H3-Turbo-Lora",
               "metrics": {
-                "likes": 488
+                "likes": 492
               },
               "updated": "2026-08-25",
               "official": true,
@@ -483,7 +482,7 @@
               "name": "multimodalart/minimax-h3",
               "url": "https://huggingface.co/spaces/multimodalart/minimax-h3",
               "metrics": {
-                "likes": 313
+                "likes": 314
               },
               "updated": "2026-09-22",
               "note": {
@@ -496,7 +495,7 @@
               "name": "mrfakename/minimax-h3-ultra-fast",
               "url": "https://huggingface.co/spaces/mrfakename/minimax-h3-ultra-fast",
               "metrics": {
-                "likes": 255
+                "likes": 257
               },
               "updated": "2026-09-04",
               "note": {
@@ -509,7 +508,7 @@
               "name": "multimodalart/minimax-h3-reference",
               "url": "https://huggingface.co/spaces/multimodalart/minimax-h3-reference",
               "metrics": {
-                "likes": 92
+                "likes": 94
               },
               "updated": "2026-08-16",
               "note": {
@@ -522,7 +521,7 @@
               "name": "akhaliq/MiniMax-H3-Turbo-Lora",
               "url": "https://huggingface.co/spaces/akhaliq/MiniMax-H3-Turbo-Lora",
               "metrics": {
-                "likes": 115
+                "likes": 116
               },
               "updated": "2026-08-24",
               "note": {
@@ -571,10 +570,10 @@
               "name": "Comfy-Org/MiniMax-H3",
               "url": "https://huggingface.co/Comfy-Org/MiniMax-H3",
               "metrics": {
-                "likes": 2029,
-                "downloads": 21857875
+                "likes": 2073,
+                "downloads": 22115336
               },
-              "updated": "2026-09-24",
+              "updated": "2026-09-29",
               "official": true,
               "note": {
                 "en": "The ComfyUI packaged build, and by download count the way most people actually run H3: 40% of the modulation weights pruned, INT8 ConvRot and custom kernels take 123.6GB down to 42.5GB.",
@@ -586,10 +585,10 @@
               "name": "DeepBeepMeep/MiniMax-H3",
               "url": "https://huggingface.co/DeepBeepMeep/MiniMax-H3",
               "metrics": {
-                "likes": 64,
-                "downloads": 506824
+                "likes": 65,
+                "downloads": 513678
               },
-              "updated": "2026-09-26",
+              "updated": "2026-09-29",
               "note": {
                 "en": "Low-VRAM packaging from the Wan2GP author.",
                 "zh": "Wan2GP 作者的低显存打包。"
@@ -605,8 +604,8 @@
               "name": "realrebelai/MiniMax-H3_GGUFs",
               "url": "https://huggingface.co/realrebelai/MiniMax-H3_GGUFs",
               "metrics": {
-                "likes": 225,
-                "downloads": 140349
+                "likes": 228,
+                "downloads": 151113
               },
               "updated": "2026-08-08",
               "tag": "GGUF",
@@ -620,8 +619,8 @@
               "name": "Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot",
               "url": "https://huggingface.co/Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot",
               "metrics": {
-                "likes": 239,
-                "downloads": 199556
+                "likes": 240,
+                "downloads": 170907
               },
               "updated": "2026-08-15",
               "tag": "NVFP4 · INT4/INT8 ConvRot",
@@ -635,8 +634,8 @@
               "name": "unsloth/MiniMax-H3-GGUF",
               "url": "https://huggingface.co/unsloth/MiniMax-H3-GGUF",
               "metrics": {
-                "likes": 318,
-                "downloads": 1243886
+                "likes": 320,
+                "downloads": 1335287
               },
               "updated": "2026-08-14",
               "tag": "GGUF",
@@ -650,8 +649,8 @@
               "name": "Abiray/MiniMax-H3-GGUF",
               "url": "https://huggingface.co/Abiray/MiniMax-H3-GGUF",
               "metrics": {
-                "likes": 141,
-                "downloads": 891629
+                "likes": 143,
+                "downloads": 746029
               },
               "updated": "2026-08-08",
               "tag": "GGUF",
@@ -665,7 +664,7 @@
               "name": "lilcheaty/MiniMax-H3-NVFP4",
               "url": "https://huggingface.co/lilcheaty/MiniMax-H3-NVFP4",
               "metrics": {
-                "likes": 129
+                "likes": 131
               },
               "updated": "2026-08-05",
               "tag": "NVFP4",
@@ -679,8 +678,8 @@
               "name": "molbal/MiniMax-H3-GGUF",
               "url": "https://huggingface.co/molbal/MiniMax-H3-GGUF",
               "metrics": {
-                "likes": 59,
-                "downloads": 69568
+                "likes": 60,
+                "downloads": 63988
               },
               "updated": "2026-08-12",
               "tag": "GGUF",
@@ -695,7 +694,7 @@
               "url": "https://huggingface.co/leejet/MiniMax-H3-GGUF",
               "metrics": {
                 "likes": 22,
-                "downloads": 131621
+                "downloads": 142525
               },
               "updated": "2026-08-30",
               "tag": "GGUF",
@@ -709,8 +708,8 @@
               "name": "Abiray/MiniMax-H3-Pruned-GGUF",
               "url": "https://huggingface.co/Abiray/MiniMax-H3-Pruned-GGUF",
               "metrics": {
-                "likes": 70,
-                "downloads": 254877
+                "likes": 72,
+                "downloads": 258484
               },
               "note": {
                 "en": "GGUF built on the pruned weights — the smallest route that still tracks the ComfyUI build.",
@@ -729,7 +728,7 @@
               "name": "Kijai/MiniMax-H3_comfy",
               "url": "https://huggingface.co/Kijai/MiniMax-H3_comfy",
               "metrics": {
-                "likes": 473
+                "likes": 477
               },
               "updated": "2026-09-13",
               "note": {
@@ -742,9 +741,9 @@
               "name": "Kijai/MiniMax-H3-experimental",
               "url": "https://huggingface.co/Kijai/MiniMax-H3-experimental",
               "metrics": {
-                "likes": 508
+                "likes": 525
               },
-              "updated": "2026-09-22",
+              "updated": "2026-10-01",
               "note": {
                 "en": "Experimental variants from the same author.",
                 "zh": "同作者的实验版本。"
@@ -768,7 +767,7 @@
               "name": "NicoLab28/ClipProj-MiniMax-H3",
               "url": "https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3",
               "metrics": {
-                "likes": 162
+                "likes": 163
               },
               "updated": "2026-08-16",
               "note": {
@@ -781,7 +780,7 @@
               "name": "Mamad8/MiniMax-H3-Image-VAE",
               "url": "https://huggingface.co/Mamad8/MiniMax-H3-Image-VAE",
               "metrics": {
-                "likes": 89
+                "likes": 91
               },
               "updated": "2026-08-08",
               "note": {
@@ -794,7 +793,7 @@
               "name": "nicolab28/ComfyUI-ClipProj",
               "url": "https://github.com/nicolab28/ComfyUI-ClipProj",
               "metrics": {
-                "stars": 164
+                "stars": 169
               },
               "updated": "2026-08-17",
               "note": {
@@ -807,7 +806,7 @@
               "name": "smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models",
               "url": "https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models",
               "metrics": {
-                "likes": 305
+                "likes": 317
               },
               "note": {
                 "en": "Pre-merged fl2va/ref2va hybrids, for when you would rather download the combination than assemble it with a hybrid loader.",
@@ -830,8 +829,8 @@
               "name": "larryvrh/MiniMax-H3-Turbo-Lora",
               "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora",
               "metrics": {
-                "likes": 1036,
-                "downloads": 214907
+                "likes": 1048,
+                "downloads": 213786
               },
               "updated": "2026-08-08",
               "official": true,
@@ -858,8 +857,8 @@
               "name": "lightx2v/Minimax-h3-Turbo",
               "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo",
               "metrics": {
-                "likes": 1008,
-                "downloads": 1541381
+                "likes": 1023,
+                "downloads": 1538470
               },
               "updated": "2026-09-10",
               "note": {
@@ -872,7 +871,7 @@
               "name": "ModelTC/Minimax-H3-Turbo",
               "url": "https://github.com/ModelTC/Minimax-H3-Turbo",
               "metrics": {
-                "stars": 370
+                "stars": 372
               },
               "updated": "2026-08-27",
               "note": {
@@ -885,8 +884,8 @@
               "name": "drbaph/MiniMax-H3-Turbo-Lora-ComfyUI",
               "url": "https://huggingface.co/drbaph/MiniMax-H3-Turbo-Lora-ComfyUI",
               "metrics": {
-                "likes": 476,
-                "downloads": 213159
+                "likes": 483,
+                "downloads": 219049
               },
               "updated": "2026-09-19",
               "note": {
@@ -926,7 +925,7 @@
               "url": "https://huggingface.co/Abiray/MiniMax-H3-Turbo-Lora-Pruned-ComfyUI",
               "metrics": {
                 "likes": 49,
-                "downloads": 12254
+                "downloads": 12266
               },
               "updated": "2026-08-09",
               "note": {
@@ -984,7 +983,7 @@
               "name": "xmarre/ComfyUI-Spectrum-MiniMax-H3",
               "url": "https://github.com/xmarre/ComfyUI-Spectrum-MiniMax-H3",
               "metrics": {
-                "stars": 672
+                "stars": 676
               },
               "updated": "2026-09-19",
               "note": {
@@ -997,7 +996,7 @@
               "name": "HELPMEEADICE/TE-Speed-MiniMaxH3-OSS",
               "url": "https://github.com/HELPMEEADICE/TE-Speed-MiniMaxH3-OSS",
               "metrics": {
-                "stars": 325
+                "stars": 328
               },
               "updated": "2026-08-03",
               "note": {
@@ -1010,7 +1009,7 @@
               "name": "T8mars/comfyui-minimax-h3-blockcache-T8",
               "url": "https://github.com/T8mars/comfyui-minimax-h3-blockcache-T8",
               "metrics": {
-                "stars": 139
+                "stars": 143
               },
               "updated": "2026-09-07",
               "note": {
@@ -1049,7 +1048,7 @@
               "name": "Tr1dae/ComfyUI-MiniMaxH3_LatentUpscaler",
               "url": "https://github.com/Tr1dae/ComfyUI-MiniMaxH3_LatentUpscaler",
               "metrics": {
-                "stars": 249
+                "stars": 251
               },
               "updated": "2026-08-17",
               "note": {
@@ -1062,7 +1061,7 @@
               "name": "LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler",
               "url": "https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler",
               "metrics": {
-                "stars": 675
+                "stars": 691
               },
               "note": {
                 "en": "Upscales H3's 24-channel latents with a trained network rather than naive interpolation, skipping the expensive VAE decode/encode round trip on the way to high resolution.",
@@ -1085,8 +1084,8 @@
               "name": "fal/MiniMax-H3-Realism-People-LoRA",
               "url": "https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA",
               "metrics": {
-                "likes": 428,
-                "downloads": 71192
+                "likes": 440,
+                "downloads": 74027
               },
               "updated": "2026-08-12",
               "official": true,
@@ -1100,7 +1099,7 @@
               "name": "Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime",
               "url": "https://huggingface.co/Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime",
               "metrics": {
-                "likes": 76
+                "likes": 77
               },
               "updated": "2026-08-11",
               "note": {
@@ -1113,8 +1112,8 @@
               "name": "Jojocodex/minimax-h3-spatial-physics-lora",
               "url": "https://huggingface.co/Jojocodex/minimax-h3-spatial-physics-lora",
               "metrics": {
-                "likes": 122,
-                "downloads": 27896
+                "likes": 123,
+                "downloads": 27364
               },
               "note": {
                 "en": "Trained for spatial reasoning and object motion rather than a look — aimed at the physics H3 gets wrong.",
@@ -1159,7 +1158,7 @@
               "name": "IAmIronMan42/MiniMax-H3-FineTuning",
               "url": "https://github.com/IAmIronMan42/MiniMax-H3-FineTuning",
               "metrics": {
-                "stars": 89
+                "stars": 90
               },
               "updated": "2026-08-10",
               "official": true,
@@ -1173,9 +1172,9 @@
               "name": "modelscope/DiffSynth-Studio",
               "url": "https://github.com/modelscope/DiffSynth-Studio",
               "metrics": {
-                "stars": 13189
+                "stars": 13200
               },
-              "updated": "2026-09-28",
+              "updated": "2026-09-30",
               "note": {
                 "en": "Complete H3 training path — LoRA scripts plus model docs.",
                 "zh": "H3 完整训练链路——LoRA 训练脚本 + 模型文档。"
@@ -1199,7 +1198,7 @@
               "name": "ostris/ai-toolkit",
               "url": "https://github.com/ostris/ai-toolkit",
               "metrics": {
-                "stars": 12144
+                "stars": 12171
               },
               "updated": "2026-09-27",
               "note": {
@@ -1212,9 +1211,9 @@
               "name": "unslothai/unsloth",
               "url": "https://github.com/unslothai/unsloth",
               "metrics": {
-                "stars": 76892
+                "stars": 77104
               },
-              "updated": "2026-09-28",
+              "updated": "2026-10-01",
               "note": {
                 "en": "Lists MiniMax-H3 among its supported training targets.",
                 "zh": "支持的训练目标中明确列出 MiniMax-H3。"
@@ -1235,7 +1234,7 @@
               "name": "NikoDemon80/ComfyUI-H3-Motion-Context",
               "url": "https://github.com/NikoDemon80/ComfyUI-H3-Motion-Context",
               "metrics": {
-                "stars": 1022
+                "stars": 1035
               },
               "updated": "2026-09-06",
               "official": true,
@@ -1250,9 +1249,9 @@
               "name": "ethanfel/ComfyUI-MiniMaxH3-Context-Loop",
               "url": "https://github.com/ethanfel/ComfyUI-MiniMaxH3-Context-Loop",
               "metrics": {
-                "stars": 470
+                "stars": 481
               },
-              "updated": "2026-09-26",
+              "updated": "2026-09-30",
               "trick": "long-video",
               "note": {
                 "en": "Reviewable long-form workflow: shot planning, per-segment preview, regeneration, checkpoints and automatic stitching.",
@@ -1293,7 +1292,7 @@
               "name": "matlowai/ComfyUI-MAINodes",
               "url": "https://github.com/matlowai/ComfyUI-MAINodes",
               "metrics": {
-                "stars": 206
+                "stars": 210
               },
               "updated": "2026-09-21",
               "trick": "misc",
@@ -1307,21 +1306,21 @@
               "name": "tritant/ComfyUI_MiniMax_H3_Extender",
               "url": "https://github.com/tritant/ComfyUI_MiniMax_H3_Extender",
               "metrics": {
-                "stars": 264
+                "stars": 270
               },
               "note": {
                 "en": "Folds Ref2VA conditioning, Motion Context, disk caching, multi-clip generation and image/audio references into one node, so long continuous sequences stop requiring a hand-built graph.",
                 "zh": "把 Ref2VA 条件、Motion Context、磁盘缓存、多片段生成与图像/音频参考收进一个节点，长连续片段不用再手搭一整张图。"
               },
               "trick": "long-video",
-              "updated": "2026-09-28"
+              "updated": "2026-09-30"
             },
             {
               "kind": "gh",
               "name": "thaakeno/ComfyUI-MiniMax-H3-Studio",
               "url": "https://github.com/thaakeno/ComfyUI-MiniMax-H3-Studio",
               "metrics": {
-                "stars": 119
+                "stars": 120
               },
               "note": {
                 "en": "Turns H3 into an actual image workflow: text-to-image, editing, multi-reference generation, LightX acceleration, face refine, previews and benchmarking — without building the H3 graph yourself.",
@@ -1345,9 +1344,9 @@
               "name": "chiphoton/MiniMax-H3-Codex-Drama",
               "url": "https://github.com/chiphoton/MiniMax-H3-Codex-Drama",
               "metrics": {
-                "stars": 50
+                "stars": 52
               },
-              "updated": "2026-09-27",
+              "updated": "2026-09-28",
               "official": true,
               "note": {
                 "en": "An installable Codex plugin with nine built-in skills that drives local H3 through the ComfyUI MCP: character and scene design, storyboard keyframes, per-shot workflow selection, then FFmpeg edit, mix, subtitle, export and QC. Prompts, assets, candidate takes and selection results are all kept, so a run can be resumed and each new attempt keeps its own version.",
@@ -1359,7 +1358,7 @@
               "name": "huangserva/ComfyUI_MiniMaxH3_Director",
               "url": "https://github.com/huangserva/ComfyUI_MiniMaxH3_Director",
               "metrics": {
-                "stars": 1128
+                "stars": 1141
               },
               "updated": "2026-08-04",
               "official": true,
@@ -1373,9 +1372,9 @@
               "name": "AIMixer/ComfyUI_MiniMaxH3_Director",
               "url": "https://github.com/AIMixer/ComfyUI_MiniMaxH3_Director",
               "metrics": {
-                "stars": 2068
+                "stars": 2130
               },
-              "updated": "2026-09-28",
+              "updated": "2026-09-30",
               "note": {
                 "en": "Multi-segment directing, adapted to the official nodes.",
                 "zh": "多段导演，适配官方节点。"
@@ -1386,9 +1385,9 @@
               "name": "seesee75-commits/ComfyUI-MiniMaxH3-Director",
               "url": "https://github.com/seesee75-commits/ComfyUI-MiniMaxH3-Director",
               "metrics": {
-                "stars": 299
+                "stars": 306
               },
-              "updated": "2026-08-16",
+              "updated": "2026-10-01",
               "note": {
                 "en": "Timeline storyboard.",
                 "zh": "时间轴故事板。"
@@ -1396,12 +1395,12 @@
             },
             {
               "kind": "gh",
-              "name": "open-video-ai/open-video",
-              "url": "https://github.com/open-video-ai/open-video",
+              "name": "agent-next/video-agent",
+              "url": "https://github.com/agent-next/video-agent",
               "metrics": {
                 "stars": 118
               },
-              "updated": "2026-09-22",
+              "updated": "2026-10-01",
               "note": {
                 "en": "\"Ollama for MiniMax H3\" — a local director layer over ComfyUI.",
                 "zh": "「MiniMax H3 版的 Ollama」——架在 ComfyUI 之上的本地导演层。"
@@ -1435,7 +1434,7 @@
               "name": "Rimagination/h3lite",
               "url": "https://github.com/Rimagination/h3lite",
               "metrics": {
-                "stars": 447
+                "stars": 454
               },
               "note": {
                 "en": "Hardware-aware Codex skill for local generation through ComfyUI: it profiles what you have and picks the route — low-VRAM fast, or quality — instead of making you choose. Bilingual docs.",
@@ -1461,7 +1460,7 @@
               "name": "SlavaSexton/ComfyUI-Agent-Kit",
               "url": "https://github.com/SlavaSexton/ComfyUI-Agent-Kit",
               "metrics": {
-                "stars": 102
+                "stars": 103
               },
               "updated": "2026-09-03",
               "note": {
@@ -1474,7 +1473,7 @@
               "name": "T8mars/minimax-h3-prompt-skill-T8",
               "url": "https://github.com/T8mars/minimax-h3-prompt-skill-T8",
               "metrics": {
-                "stars": 261
+                "stars": 268
               },
               "updated": "2026-09-27",
               "note": {
@@ -1510,9 +1509,9 @@
               "name": "T8mars/comfyui-minimax-h3-audio-T8",
               "url": "https://github.com/T8mars/comfyui-minimax-h3-audio-T8",
               "metrics": {
-                "stars": 1133
+                "stars": 1148
               },
-              "updated": "2026-09-27",
+              "updated": "2026-09-30",
               "note": {
                 "en": "Audio-side nodes — the part most H3 workflows under-use.",
                 "zh": "音频侧节点——多数 H3 工作流最没用起来的一块。"
@@ -1523,7 +1522,7 @@
               "name": "ethanfel/ComfyUI-MiniMax-H3-Guide",
               "url": "https://github.com/ethanfel/ComfyUI-MiniMax-H3-Guide",
               "metrics": {
-                "stars": 286
+                "stars": 290
               },
               "updated": "2026-08-11",
               "note": {
@@ -1536,7 +1535,7 @@
               "name": "Carasibana/ComfyUI-H3-FaceRefine",
               "url": "https://github.com/Carasibana/ComfyUI-H3-FaceRefine",
               "metrics": {
-                "stars": 446
+                "stars": 449
               },
               "updated": "2026-09-13",
               "note": {
@@ -1549,7 +1548,7 @@
               "name": "HM-RunningHub/ComfyUI_RH_MinMaxH3",
               "url": "https://github.com/HM-RunningHub/ComfyUI_RH_MinMaxH3",
               "metrics": {
-                "stars": 139
+                "stars": 140
               },
               "updated": "2026-08-05",
               "note": {
@@ -1586,7 +1585,7 @@
               "url": "https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA",
               "metrics": {
                 "likes": 187,
-                "downloads": 332
+                "downloads": 309
               },
               "updated": "2026-08-07",
               "note": {
@@ -1612,7 +1611,7 @@
               "name": "1038lab/ComfyUI-MiniMax-H3-Promptor",
               "url": "https://github.com/1038lab/ComfyUI-MiniMax-H3-Promptor",
               "metrics": {
-                "stars": 237
+                "stars": 241
               },
               "updated": "2026-09-12",
               "note": {
@@ -1625,9 +1624,9 @@
               "name": "T8mars/comfyui-minimax-h3-prompt-enhancer-T8",
               "url": "https://github.com/T8mars/comfyui-minimax-h3-prompt-enhancer-T8",
               "metrics": {
-                "stars": 333
+                "stars": 340
               },
-              "updated": "2026-09-28",
+              "updated": "2026-10-01",
               "note": {
                 "en": "Multimodal prompt enhancement.",
                 "zh": "多模态提示词增强。"
@@ -1638,9 +1637,9 @@
               "name": "Adudeguyman/…-PromptBuilder",
               "url": "https://github.com/Adudeguyman/ComfyUI-Fantastic-MiniMaxH3-PromptBuilder",
               "metrics": {
-                "stars": 219
+                "stars": 246
               },
-              "updated": "2026-09-26",
+              "updated": "2026-10-01",
               "note": {
                 "en": "Prompt builder node.",
                 "zh": "提示词构建器节点。"
@@ -1651,9 +1650,9 @@
               "name": "duckyshell/ComfyUI-MiniMaxH3-Prompt-Writer",
               "url": "https://github.com/duckyshell/ComfyUI-MiniMaxH3-Prompt-Writer",
               "metrics": {
-                "stars": 235
+                "stars": 244
               },
-              "updated": "2026-09-27",
+              "updated": "2026-09-29",
               "note": {
                 "en": "Local multimodal prompt writer running on Gemma 4 GGUF — no API calls.",
                 "zh": "跑在 Gemma 4 GGUF 上的本地多模态提示词写手，不发 API 请求。"
@@ -1700,7 +1699,7 @@
               "name": "Shrek3OnVH5/MiniMax-H3-NativeAudio-MusicVideo-Workflow",
               "url": "https://github.com/Shrek3OnVH5/MiniMax-H3-NativeAudio-MusicVideo-Workflow",
               "metrics": {
-                "stars": 95
+                "stars": 96
               },
               "updated": "2026-08-05",
               "note": {
@@ -1718,7 +1717,7 @@
               "name": "H3 [LightX2V 6-8steps] collection",
               "url": "https://civitai.com/models/579280",
               "metrics": {
-                "downloads": 36729
+                "downloads": 36879
               },
               "civitaiType": "Workflows",
               "realname": "Applicable to QW21 | LTX25 | MM H3 | Krea2 | ideogram 4 WF collection",
@@ -1732,7 +1731,7 @@
               "name": "MiniMax H3 INT8/INT4 ConvRot",
               "url": "https://civitai.com/models/2830065",
               "metrics": {
-                "downloads": 40044
+                "downloads": 41540
               },
               "civitaiType": "Checkpoint",
               "realname": "Minimax H3 INT8/INT4 ConvRot",
@@ -1746,7 +1745,7 @@
               "name": "Lonecat's Simple Workflows",
               "url": "https://civitai.com/models/2600919",
               "metrics": {
-                "downloads": 21951
+                "downloads": 22731
               },
               "civitaiType": "Workflows",
               "realname": "Lonecat's Simple Workflows (MiniMax H3, Krea 2, ZIT, Klein_9b, Illustrious, Flux, Wan2.2, Qwen Image Edit)",
@@ -1760,7 +1759,7 @@
               "name": "MiniMax H3 lightx2v turbo accelerator",
               "url": "https://civitai.com/models/1063735",
               "metrics": {
-                "downloads": 20271
+                "downloads": 21041
               },
               "civitaiType": "LORA",
               "realname": "[ Accelerator LoRAs ] Applicable to QW21 | Minimax H3 | HYVideo TURBO/LIGHTNING/DMD/FAST",
@@ -1774,7 +1773,7 @@
               "name": "MiniMax H3: EZ Turbo / RTX Upscale / LTX Refine",
               "url": "https://civitai.com/models/2831976",
               "metrics": {
-                "downloads": 15949
+                "downloads": 16119
               },
               "civitaiType": "Workflows",
               "realname": "Minimax H3: EZ  | Turbo . Optimal . RTX Upscale . LTX Refine | R2VA . ITVA . T2VA . FL2VA",
@@ -1788,7 +1787,7 @@
               "name": "T2V / I2V / REF2V Advanced Filmmaking",
               "url": "https://civitai.com/models/2834514",
               "metrics": {
-                "downloads": 21646
+                "downloads": 21946
               },
               "civitaiType": "Workflows",
               "realname": "Minimax H3 T2V / I2V / REF2V Advanced Filmmaking Workflow | All Speedups + QoL Features",
@@ -1802,7 +1801,7 @@
               "name": "MiniMax-H3 Multishot Seamless Chain",
               "url": "https://civitai.com/models/2833322",
               "metrics": {
-                "downloads": 10135
+                "downloads": 10259
               },
               "civitaiType": "Workflows",
               "realname": "MiniMax-H3 Multishot — Seamless Chain: multi-shot scenes that render as one continuous take (picture + audio)",
@@ -1816,7 +1815,7 @@
               "name": "Ultra Fastest Workflow (6GB VRAM / 16GB RAM)",
               "url": "https://civitai.com/models/2835250",
               "metrics": {
-                "downloads": 11309
+                "downloads": 11748
               },
               "civitaiType": "Workflows",
               "realname": "MiniMax H3 Ultra Fastest True 4 Steps + HD Sound | 6GB VRAM 16GB RAM",
@@ -1830,7 +1829,7 @@
               "name": "SageAttention four-mode workflow",
               "url": "https://civitai.com/models/2831550",
               "metrics": {
-                "downloads": 8376
+                "downloads": 8584
               },
               "civitaiType": "ComfyWorkflows",
               "realname": "MiniMax H3 Workflows (T2V, I2V, First-Last-Frame, Ref2V) with SageAttention + Turbo Lora + Face Refine",
@@ -1844,7 +1843,7 @@
               "name": "4 STEPS TURBO AIO",
               "url": "https://civitai.com/models/2838258",
               "metrics": {
-                "downloads": 4916
+                "downloads": 4984
               },
               "civitaiType": "Workflows",
               "realname": "MINIMAX H3 // 4 STEPS TURBO VIDEO AIO WORKFLOW ⚡",
@@ -1858,7 +1857,7 @@
               "name": "INT4 ConvRot (12GB VRAM)",
               "url": "https://civitai.com/models/2830162",
               "metrics": {
-                "downloads": 4016
+                "downloads": 4078
               },
               "civitaiType": "Checkpoint",
               "realname": "MiniMax H3 INT4 ConvRot | 12GB VRAM",
@@ -1872,7 +1871,7 @@
               "name": "SEEDVR2 upscaler + Ollama prompt helper",
               "url": "https://civitai.com/models/2836319",
               "metrics": {
-                "downloads": 4188
+                "downloads": 4241
               },
               "civitaiType": "Workflows",
               "realname": "MiniMax H3 with SEEDVR2 upscaler + Ollama prompt helper | 16GB VRAM 32GB RAM",
@@ -1886,7 +1885,7 @@
               "name": "Claymation Transformation",
               "url": "https://civitai.com/models/1659949",
               "metrics": {
-                "downloads": 1971
+                "downloads": 1987
               },
               "civitaiType": "LORA",
               "realname": "Claymation Transformation - MiniMax H3 R2VA / Wan2.2-2.1 14b T2V",
@@ -2029,9 +2028,9 @@
               "name": "wildminder/awesome-minimax-H3",
               "url": "https://github.com/wildminder/awesome-minimax-H3",
               "metrics": {
-                "stars": 532
+                "stars": 538
               },
-              "updated": "2026-09-26",
+              "updated": "2026-09-30",
               "note": {
                 "en": "Deeply detailed on weights, quantizations and node inventory — the reference to reach for when you want file-level specifics.",
                 "zh": "在权重、量化与节点清单上做得极细——需要文件级细节时该看它。"
@@ -2044,7 +2043,7 @@
               "metrics": {
                 "stars": 45
               },
-              "updated": "2026-09-28",
+              "updated": "2026-10-01",
               "note": {
                 "en": "Our companion list: H3 prompts from the official showcase, each with its generated preview, in 20 languages.",
                 "zh": "本清单的姊妹仓：官方案例 H3 提示词，每条附成片预览，20 语言。"
